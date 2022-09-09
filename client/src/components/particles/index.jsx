@@ -69,7 +69,7 @@ const BackgroundParticles = () => {
             line_linked: {
               enable: true,
               distance: 150,
-              color: '#333333',
+              color: '#000',
               opacity: 0.2,
               width: 2,
             },

@@ -1,8 +1,8 @@
+import {Routes, Route} from 'react-router-dom'
 import Home from './components/home/home'
-import './App.css'
-import BackgroundParticles from './components/particles/index'
-import Page from './components/page/page'
 import Nav from './components/nav/nav';
+import './App.css'
+import BackgroundParticles from './components/particles';
 
 function App() {
 
@@ -10,13 +10,11 @@ function App() {
   return (
 
     <div className="App">
-        {/* <BackgroundParticles/> */}
-
         <Nav/>
-        
-        <Home/>
-
-
+          <BackgroundParticles/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
     </div>
   )
 }

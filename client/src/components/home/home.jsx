@@ -14,7 +14,7 @@ const Home = () => {
                         sx={{
                             fontFamily: 'Bebas Neue',
                             fontSize: '2.8rem',
-                            // color: '#333333'
+                            color: '#000'
                         }}
                     >Codeamos soluciones para una vida mejor</Typography>
                 </Box>
@@ -22,7 +22,8 @@ const Home = () => {
                     <Typography 
                         sx={{
                             fontFamily: 'Bebas Neue',
-                            fontSize: '2.8rem'
+                            fontSize: '2.8rem',
+                            color: '#000',
                         }}
                     >Converti tus ideas en grandes experiencias digitales</Typography>
                 </Box>
