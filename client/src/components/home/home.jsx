@@ -2,11 +2,12 @@ import { Box, Typography, Button } from '@mui/material';
 import frase from '../../assets/svg/frase.svg'
 import BackgroundParticles from '../particles';
 import style from './styles/index.module.css'
-
+import Footer from '../footer/footer';
 const Home = () => {
 
     return (
         <Box className={style.containerHome}>
+                
             {/* <BackgroundParticles/> */}
             <Box className={style.containerTxtHome}>
                 <Box className={style.contHomeTxt}>
@@ -44,6 +45,8 @@ const Home = () => {
                     <img src={frase} alt='motivation-svg' className={style.motivation}/>
                 </Box>
             </Box>
+            
+            
         </Box>
 
     )
