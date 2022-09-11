@@ -12,3 +12,52 @@
   display: flex;
   flex-direction: row;
 }
+.contentLogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid #aaa;
+  width: 30%;
+  height: 32vh;
+}
+.contentListado{
+  width: 30%;
+}
+/* .contentUl{
+  border: 1px solid red;
+} */
+.Ul{
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  justify-content: space-around;
+}
+.li:hover{
+  color: aqua;
+  cursor: pointer;
+  transition: 1s;
+}
+.contentIConsEmail{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+.contentICons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+.icon{
+  color: aliceblue;
+  font-size: 30px;
+}
+.icon:hover{
+  transition: 1s;
+  color: rgb(219, 205, 80);
+  cursor: pointer;
+}
