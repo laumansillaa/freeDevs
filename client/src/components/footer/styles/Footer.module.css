@@ -7,6 +7,7 @@
   height: 50vh;
   background-color: black;
   z-index: 1;
+  color: #fff;
 }
 .contentIcons{
   display: flex;
@@ -33,6 +34,10 @@
   list-style:none;
   justify-content: space-around;
 }
+.li{
+  font-size: 20px;
+  padding-bottom: 30px;
+}
 .li:hover{
   color: aqua;
   cursor: pointer;
@@ -55,9 +60,97 @@
 .icon{
   color: aliceblue;
   font-size: 30px;
+  padding-bottom: 17px;
 }
 .icon:hover{
   transition: 1s;
   color: rgb(219, 205, 80);
   cursor: pointer;
+}
+
+/* Responsive  Telefono*/
+
+@media screen and (max-width:480px){
+
+  .contentFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .contentLogo{
+    width: 80%;
+    height: 20vh;
+    border-right: none;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .Ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .li{
+    padding-top: 20px;
+  }
+  .contentListado{
+    margin: 3vh;
+    width: 90%;
+  }
+  .contentIConsEmail{
+    width: 90%;
+  }
+  .icon{
+    padding: 5px;
+  }
+}
+
+ /* RESPONSIVE TABLET */
+
+ @media screen and (min-width:480px) and (max-width:950px){
+ 
+  .contentFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .contentLogo{
+    width: 80%;
+    height: 20vh;
+    border-right: none;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .Ul{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+  .li{
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .contentListado{
+    margin: 3vh;
+    width: 90%;
+  }
+  .contentIConsEmail{
+    width: 90%;
+  }
+  .icon{
+    padding: 5px;
+    font-size: 40px;
+  }
+
 }

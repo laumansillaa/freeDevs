@@ -28,7 +28,7 @@ const Footer = () => {
                 <FaWhatsapp className={style.icon}/>
             </div>
            <div>
-             <h4>Suport FreeDevs@gmail.com</h4>
+             <h4 className={style.title}>Suport FreeDevs@gmail.com</h4>
            </div>
            
            </div>
