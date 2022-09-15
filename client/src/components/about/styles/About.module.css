@@ -1,0 +1,16 @@
+.contentAbout{
+  display: flex;
+  flex-direction: row;
+  background-color: brown;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: space-around;
+  width: 60%;
+  height: auto;
+}
+.data{
+  width: 40%;
+  height: auto;
+}

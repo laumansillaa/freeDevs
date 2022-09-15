@@ -1,0 +1,16 @@
+.card{
+  background-color: aqua;
+  width: 25vh;
+  height: 40vh;
+  border-radius: 15px;
+  margin-top: 10vh;
+}
+
+.title{
+  font-size: 20px;
+  text-align: end;
+}
+
+.parrafo{
+  text-align: start;
+}
