@@ -1,8 +1,10 @@
 import {Routes, Route} from 'react-router-dom'
-import Home from './components/home/home'
+import Home from './components/home/Home'
 import Nav from './components/nav/nav';
-import './App.css'
+import Footer from './components/footer/footer'
 import BackgroundParticles from './components/particles';
+import './App.css'
+
 
 function App() {
 
@@ -11,10 +13,9 @@ function App() {
 
     <div className="App">
         <Nav/>
-          <BackgroundParticles/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-        </Routes>
+          <Routes path='/'>
+            <Route path='/' element={<Home/>}/>
+          </Routes>
     </div>
   )
 }

@@ -1,0 +1,142 @@
+.containerHome{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+}
+
+.containerMotivation{
+    width: 50%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.motivation{
+    width: 70%;
+    margin-left: 3rem;
+}
+
+.containerTxtHome{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+.contHomeTxt{
+    width: 70%;
+    text-align: start;
+    margin-bottom: 1.5rem;
+    z-index: 1;
+}
+
+.contHomeTxtTwo{
+    width: 100%;
+    text-align: start;
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+
+.contHomeBtn{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+@media (max-width: 894px){
+    .containerTxtHome{
+        width: 60%;
+    }
+
+    .containerMotivation{
+        width: 40%;
+    }
+
+    .contHomeTxt{
+        width: 70%;
+    }
+
+    .contHomeTxtTwo{
+        width: 100%
+    }
+
+}
+
+
+@media screen and (max-width: 724px) {
+    .containerHome{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .containerMotivation {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        width: 90%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .motivation{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 602px) {
+    .containerHome{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .containerMotivation {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        width: 90%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .containerTxtHome{
+        width: 100%;
+    }
+
+    .contHomeTxt{
+        width: 60%;
+    }
+
+    .contHomeTxtTwo{
+        width: 80%;
+    }
+
+    .motivation{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .containerTxtHome{
+        padding-left: 1.5rem;
+        width: 100%;
+    }
+
+    .contHomeTxt{
+        width: 100%;
+    }
+
+    .contHomeTxtTwo{
+        width: 100%;
+    }
+
+    .motivation{
+        width: 85%;
+    }
+}
