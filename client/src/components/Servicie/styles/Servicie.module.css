@@ -19,10 +19,27 @@
 }
 .spanProducto{
   margin: auto;
-  background-color: azure;
+ 
   width: 80vh;
   height: 30vh;
   display: flex;
   flex-direction: column;
   font-size: 20px;
+}
+.contentTitle{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.titleDigital{
+  color: var(--color-quinto);
+  margin-left: 8px;
+}
+.contentParrafo{
+  display: flex;
+  margin: auto;
+  text-align: left;
+  width: 90%;
+  height: auto;
+  font-size: 25px;
 }

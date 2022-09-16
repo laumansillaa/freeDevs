@@ -1,10 +1,11 @@
 import {Box} from '@mui/material'
-import style from "./styles/About.module.css"
-import Card from './CardAbout'
+import style from "./styles/Servicie.module.css"
+import Card from './CardServicie'
 import SvgComponent from './SvgService'
 import CardSec from './CardSecServicie'
+import Prueba from '../Prueba/Prueba'
 
-const About = () => {
+const Servicie = () => {
   return(
     <Box className={style.contentAbout}>
       <Box className={style.cards}>
@@ -15,10 +16,16 @@ const About = () => {
       
       </Box>
       <Box  className={style.data}>
-        <SvgComponent/>
+        <SvgComponent />
         <Box className={style.spanProducto}>
-            <h1>Producto Digital</h1>
-            <p>Nuestro equipo interdiciplinado esta listo para construir su producto, desde una web site, hasta una aplicacion web y e-commerce. Ofrecemos modelos estrategicos, consultorio para la realizacion de App para generar un gran impacto y brindarle soluciones cros/stack digital.</p>
+            <Box className={style.contentTitle}>
+              <h1>Producto</h1>
+              <h1 className={style.titleDigital}>Digital</h1>
+            </Box>
+            <Box className={style.contentParrafo}>
+              <p>Nuestro equipo interdiciplinado esta listo para construir su producto, desde una web site, hasta una aplicacion web y e-commerce. Ofrecemos modelos estrategicos, consultorio para la realizacion de App para generar un gran impacto y brindarle soluciones cros/stack digital.</p>
+              </Box>
+              <Prueba/>
         </Box>
 
       </Box>
@@ -26,4 +33,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default Servicie;

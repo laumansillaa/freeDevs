@@ -3,7 +3,7 @@ import Home from './components/home/home'
 import Nav from './components/nav/nav';
 import './App.css'
 import BackgroundParticles from './components/particles';
-import About from './components/about/about';
+import Servicie from './components/Servicie/Servicie';
 // import Footer from './components/footer/footer';
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
           {/* <BackgroundParticles/> */}
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/servicie' element={<Servicie/>}/>
         </Routes>
     </div>
   )
 }
 
-export default App
+export default App;
