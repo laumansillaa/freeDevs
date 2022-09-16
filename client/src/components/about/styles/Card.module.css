@@ -1,11 +1,25 @@
+@import "../../VarGlobal.css";
 .card{
-  background-color: aqua;
-  width: 25vh;
+  background-color: var(--color-cuarto);
+  width: 100vh;
   height: 40vh;
   border-radius: 15px;
-  margin-top: 10vh;
+  margin-top: 3vh;
+  box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
+  -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
+  -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
 }
 
+.cardSec{
+  background-color: var(--color-terciario);
+  width: 30vh;
+  height: 40vh;
+  border-radius: 15px;
+  margin-top: 3vh;
+  box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
+-webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
+-moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
+}
 .title{
   font-size: 20px;
   text-align: end;
