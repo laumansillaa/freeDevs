@@ -1,4 +1,4 @@
 .container{
   background-color: var(--color-black-gray);
-  z-index: 0;
+  z-index: -1;
 }
