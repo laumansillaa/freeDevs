@@ -14,16 +14,16 @@ const Nav = () => {
             </Box>
             <Box className={style.contItemsNav}>
                 <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Nosotros</Link>
+                    <a href='/a' className={style.itemNav}>Nosotros</a>
                 </Box>
                 <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Servicios</Link>
+                    <a href='/a' className={style.itemNav}>Servicios</a>
                 </Box>
                 <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Proyectos</Link>
+                    <a href='/a' className={style.itemNav}>Proyectos</a>
                 </Box>
                 <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Contacto</Link>
+                    <a href='/a' className={style.itemNav}>Contacto</a>
                 </Box>
             </Box>
         </Box>
