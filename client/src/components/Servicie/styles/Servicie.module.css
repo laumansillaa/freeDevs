@@ -48,7 +48,7 @@
   text-align: left;
   width: 90%;
   height: auto;
-  font-size: 25px;
+  font-size: 2rem;
 }
 .contentTitleWorkSpan{
   display: flex;
@@ -72,7 +72,16 @@
 .contentParrafoBtn{
   width: 70vh;
   background-color: aqua;
+
 }
 .imgWork{
   width: 500px;
+}
+.btn{
+  width: 250px;
+  height: 55px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: aquamarine;
+  border: none;
 }

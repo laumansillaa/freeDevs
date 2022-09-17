@@ -14,6 +14,9 @@
   transition: 1.5s;
   cursor:pointer;
   background-color: var(--color-secundario);
+  box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
+  -webkit-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
+  -moz-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
 
 }
 .cardSec{
@@ -31,6 +34,9 @@
   transition: 1.5s;
   background-color: var(--color-secundario);
   color: antiquewhite;
+  box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
+  -webkit-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
+  -moz-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
 }
 .contentTitle{
   margin: auto;

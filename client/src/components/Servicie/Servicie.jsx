@@ -37,8 +37,9 @@ const Servicie = () => {
         <Box className={style.contentPImg}>
         <Box className={style.contentParrafoBtn}>
           <h1>Te contamos nuestra modalidad de trabajo</h1>
-          <p>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia</p>
-          <input type="button" value="Contacto" />
+          <p>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia ducimus eaque, voluptas nemo tempore explicabo reprehenderit, magnam doloremque veritatis consequatur maxime? Dolor optio culpa quisquam ipsum numquam eius. Ab!
+          Amet cupiditapti totam perspiciatis assumenda, hic molestiae repellat laboriosam recusandae voluptate quidem voluptatum pariatur doloribus quisquam ratione dolorum? Labore, neque.</p>
+          <input className={style.btn} type="button" value="Contacto" />
         </Box>
         <Box> 
           <img className={style.imgWork} src="https://i.postimg.cc/qMjR4Stt/undraw-Team-collaboration-re-ow29.png" alt="SpaceWork" />
