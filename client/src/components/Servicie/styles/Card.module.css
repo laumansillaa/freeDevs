@@ -2,10 +2,16 @@
 
 .card{
   background-color: var(--color-cuarto);
-  width: 28vh;
-  height: 40vh;
-  border-radius: 15px;
-  margin-top: 3vh;
+  width: 40vh;
+  height: 28vh;
+  /* border-radius: 15px; */
+  -webkit-border-top-right-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -webkit-border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: 8vh;
   box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
@@ -21,10 +27,17 @@
 }
 .cardSec{
   background-color: var(--color-terciario);
-  width: 28vh;
-  height: 40vh;
-  border-radius: 15px;
-  margin-top: 3vh;
+  width: 40vh;
+  height: 28vh;
+  /* border-radius: 15px; */
+  -webkit-border-top-right-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -webkit-border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: 17vh;
+ 
   box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
@@ -37,6 +50,7 @@
   box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
   -webkit-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
   -moz-box-shadow: 14px 10px 36px -3px rgba(130,84,4,1);
+  
 }
 .contentTitle{
   margin: auto;
