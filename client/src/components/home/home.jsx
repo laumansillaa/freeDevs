@@ -50,6 +50,7 @@ const Home = () => {
                         </Box>
                     </Box>
                 </Box>
+            
             </Box>
 
 
