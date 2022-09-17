@@ -1,7 +1,8 @@
 import {Box, Typography} from '@mui/material'
-import {Link} from 'react-router-dom'
 import freeDev from '../../assets/svg/freeDevs.svg'
 import style from './styles/index.module.css'
+import menu from '../../assets/svg/menu.svg'
+import lampara from '../../assets/lampara.png'
 
 
 const Nav = () => {
@@ -9,21 +10,22 @@ const Nav = () => {
 
     return (
         <Box className={style.contNav} >
-            <Box className={style.contImgNav}>
-                <img src={freeDev} alt='freeDev-svg'/>
-            </Box>
-            <Box className={style.contItemsNav}>
-                <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Nosotros</Link>
+            <Box className={style.navContainer}>
+                <Box className={style.contImgNav}>
+                    <img src={freeDev} alt='freeDev-svg' className={style.logo}/>
                 </Box>
-                <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Servicios</Link>
+                <label for='menu' className={style.navLabel}>
+                    <img src={menu} alt='menu-svg' className={style.navSvg} />
+                </label>
+                <input type='checkbox' id='menu' className={style.navInput}></input>
+                <Box className={style.contItemsNav}>
+                    <a href='/a' className={style.navItem}>Nosotros</a>
+                    <a href='/a' className={style.navItem}>Servicios</a>
+                    <a href='/a' className={style.navItem}>Proyectos</a>
+                    <a href='/a' className={style.navItem}>Contacto</a>
                 </Box>
-                <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Proyectos</Link>
-                </Box>
-                <Box className={style.boxItem}>
-                    <Link to='/a' className={style.itemNav}>Contacto</Link>
+                <Box className={style.contLampara}>
+                    <img src={lampara} alt='light-png' className={style.lampara}/>
                 </Box>
             </Box>
         </Box>

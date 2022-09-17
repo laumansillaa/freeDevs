@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom'
-import Home from './components/home/home'
+import Home from './components/home/Home'
 import Nav from './components/nav/nav';
 import './App.css'
 
@@ -11,9 +11,7 @@ function App() {
 
     <div className="App">
         <Nav/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-        </Routes>
+        <Home/>
     </div>
   )
 }
