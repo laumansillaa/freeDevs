@@ -10,6 +10,12 @@
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
 }
+.card:hover{
+  transition: 1.5s;
+  cursor:pointer;
+  background-color: var(--color-secundario);
+
+}
 .cardSec{
   background-color: var(--color-terciario);
   width: 28vh;
@@ -23,7 +29,8 @@
 .cardSec:hover{
   cursor: pointer;
   transition: 1.5s;
-  background-color: blur(4px);
+  background-color: var(--color-secundario);
+  color: antiquewhite;
 }
 .contentTitle{
   margin: auto;

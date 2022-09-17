@@ -1,9 +1,12 @@
 @import "../../VarGlobal.css";
 
 .contentAbout{
+  width: 100%;
+  height: 110vh;
   display: flex;
   flex-direction: row;
   background-color: var(--color-primario);
+  padding-bottom: 120px;
 }
 .cards{
   display: grid;
@@ -35,6 +38,10 @@
   color: var(--color-quinto);
   margin-left: 8px;
 }
+.contentServiWork{
+  width: 100%;
+  height: 800px;
+}
 .contentParrafo{
   display: flex;
   margin: auto;
@@ -42,4 +49,30 @@
   width: 90%;
   height: auto;
   font-size: 25px;
+}
+.contentTitleWorkSpan{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50px;
+  align-items: center;
+  width: 60%;
+  background-color: aquamarine;
+  height: 15vh;
+  margin-top: -60px;
+}
+.contentPImg{
+  display: flex;
+  width: 100%;
+  background-color: aliceblue;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 220px;
+}
+.contentParrafoBtn{
+  width: 70vh;
+  background-color: aqua;
+}
+.imgWork{
+  width: 500px;
 }
