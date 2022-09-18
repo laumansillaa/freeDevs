@@ -3,8 +3,8 @@ import Home from './components/home/Home'
 import Nav from './components/nav/nav';
 import Service from './components/Servicie/Servicie'
 import './App.css'
-import About from './components/about/About';
-
+import Servicie from './components/Servicie/Servicie';
+import Footer from './components/footer/footer'
 
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
 
     <div className="App">
         <Nav/>
-        <Home/>
-        <Service/>
-        <About/>
+          <Home/>
+          <Servicie/>
+          <Footer/>
     </div>
   )
 }
