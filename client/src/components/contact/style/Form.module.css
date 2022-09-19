@@ -1,0 +1,17 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 90vh;
+}
+
+.formItems{
+  margin: 15px !important;
+}
+
+.titleContact{
+  font-size: 60px;
+}
+.btn{
+  margin-top: 35px !important;
+}

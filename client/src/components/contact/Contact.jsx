@@ -9,20 +9,21 @@ const Contact = () => {
       <Box className={style.contact}>
        <Box className={style.contentCards}> 
         <Box className={style.card}>
-          <span>Tienes un proyecto panificado y necesita desarrollarlo?</span>
+          <span className={style.titleCard}>Tienes un proyecto panificado y necesita desarrollarlo?</span>
         </Box>
         <Box className={style.card}>
-        <span>Queres que tu negocio empiece a crecer?</span>
+        <span className={style.titleCard}>Queres que tu negocio empiece a crecer?</span>
         </Box>
         <Box className={style.card}>
-        <span>Tenes una idea pero no sabes por donde empezar?</span>
+        <span className={style.titleCard}>Tenes una idea pero no sabes por donde empezar?</span>
         </Box>
         <Box>
-        <span>No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</span>
+        <span className={style.span}>No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</span>
         </Box>
        </Box>
        <Box  className={style.contentForm}>
-        <Form/>
+        
+        <Form />
        </Box>
       </Box>
 

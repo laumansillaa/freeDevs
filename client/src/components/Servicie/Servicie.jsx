@@ -40,14 +40,14 @@ const Servicie = () => {
           <p>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia ducimus eaque, voluptas nemo tempore explicabo reprehenderit, magnam doloremque veritatis consequatur maxime? Dolor optio culpa quisquam ipsum numquam eius. Ab!
           Amet cupiditapti totam perspiciatis assumenda, hic molestiae repellat laboriosam recusandae voluptate quidem voluptatum pariatur doloribus quisquam ratione dolorum? Labore, neque.</p>
           <Button
-                                    variant='contained'
-                                    sx={{
-                                        background: '#154AB1',
-                                        fontFamily: 'Bebas Neue',
-                                        letterSpacing: '.2rem',
-                                        fontSize: '1.2rem'
-                                    }}
-                                >Contactanos</Button>
+              variant='contained'
+                 sx={{
+                   background: '#154AB1',
+                   fontFamily: 'Bebas Neue',
+                   letterSpacing: '.2rem',
+                   fontSize: '1.2rem'
+                }}
+          >Contactanos</Button>
         </Box>
         <Box> 
           <img className={style.imgWork} src="https://i.postimg.cc/qMjR4Stt/undraw-Team-collaboration-re-ow29.png" alt="SpaceWork" />
