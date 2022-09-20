@@ -10,10 +10,10 @@ const Servicie = () => {
     <>
     <Box className={style.contentAbout}>
       <Box className={style.cards}>
-       <Card  title="Aplicacion web" info="desarrollamos soluciones a medida, utilizando las ultimas tecnologias de alto rendimiento y escabilidad, trabajamos persiguiendo tus objetivos"/>
-       <CardSec title="disenio ux/ui" info="Buscamos la mejor experiencia para tus usuarios. Nos enfocamos en que los clientes se lleven experiencias placenteras y asi potncias realaciones, lo que lleva obtener un mejor impacto"/>
-       <CardSec title="disenio ux/ui" info="loremLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio, vero, impedit animi perspiciatis esse alias tempora minus velit earum reprehenderit pariatur iure inven "/>
-       <Card title="disenio ux/ui" info="loremLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio, vero, impedit animi perspiciatis esse alias tempora minus velit earum reprehenderit pariatur iure inven "/>
+       <Card  title="Desarrollo web" info="desarrollamos soluciones a medida, utilizando las ultimas tecnologias de alto rendimiento y escabilidad, trabajamos persiguiendo tus objetivos"/>
+       <CardSec title="Disenio ux/ui" info="Buscamos la mejor experiencia para tus usuarios. Nos enfocamos en que los clientes se lleven experiencias placenteras y asi potncias realaciones, lo que lleva obtener un mejor impacto"/>
+       <CardSec title="Web Analytics" info="Creamos un análisis bien hecho para comprender el comportamiento de tu audiencia y tomar acciones más concretas y certeras"/>
+       <Card title="SEO" info="Search Engine Optimization. Realizamos en un conjunto de técnicas y estrategias centradas en optimizar el posicionamiento orgánico en buscadores de internet"/>
       
       </Box>
       <Box  className={style.data}>
