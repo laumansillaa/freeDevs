@@ -1,7 +1,7 @@
 import {Box, Button} from '@mui/material'
 import style from "./styles/Servicie.module.css"
 import Card from './CardServicie'
-import SvgComponent from './SvgService'
+import svgServicie from '../../assets/svg/FrameServicie.svg';
 import CardSec from './CardSecServicie'
 
 
@@ -17,7 +17,7 @@ const Servicie = () => {
       
       </Box>
       <Box  className={style.data}>
-        <SvgComponent />
+       <img src={svgServicie} alt="imgServicie" className={style.svgServicie}/>
         <Box className={style.spanProducto}>
             <Box className={style.contentTitle}>
               <h1>Producto</h1>
@@ -35,11 +35,11 @@ const Servicie = () => {
           <h1>Nuestra gestion para llevar acabo un gran proyecto</h1>
         </Box>
         <Box className={style.contentPImg}>
-        <Box className={style.contentParrafoBtn}>
-          <h1>Te contamos nuestra modalidad de trabajo</h1>
-          <p>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia ducimus eaque, voluptas nemo tempore explicabo reprehenderit, magnam doloremque veritatis consequatur maxime? Dolor optio culpa quisquam ipsum numquam eius. Ab!
+        <Box className={style.contentParrafoWork}>
+          <h1 className={style.titleParrafo}>Te contamos nuestra modalidad de trabajo</h1>
+          <p className={style.parrafoWork}>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia ducimus eaque, voluptas nemo tempore explicabo reprehenderit, magnam doloremque veritatis consequatur maxime? Dolor optio culpa quisquam ipsum numquam eius. Ab!
           Amet cupiditapti totam perspiciatis assumenda, hic molestiae repellat laboriosam recusandae voluptate quidem voluptatum pariatur doloribus quisquam ratione dolorum? Labore, neque.</p>
-          <Button
+          {/* <Button
               variant='contained'
                  sx={{
                    background: '#154AB1',
@@ -47,7 +47,7 @@ const Servicie = () => {
                    letterSpacing: '.2rem',
                    fontSize: '1.2rem'
                 }}
-          >Contactanos</Button>
+          >Contactanos</Button> */}
         </Box>
         <Box> 
           <img className={style.imgWork} src="https://i.postimg.cc/qMjR4Stt/undraw-Team-collaboration-re-ow29.png" alt="SpaceWork" />

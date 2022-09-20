@@ -2,7 +2,7 @@
 
 .contentAbout{
   width: 100%;
-  height: 110vh;
+  height:auto;
   display: flex;
   flex-direction: row;
   background-color: var(--color-primario);
@@ -12,25 +12,24 @@
 }
 .cards{
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, auto);
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
   height: auto;
   /* margin: 20px; */
 }
 
 .data{
-  width: 60%;
+  width: 40%;
   height: auto;
 }
 .spanProducto{
   margin: auto;
- 
-  width: 80vh;
-  height: 30vh;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .contentTitle{
   display: flex;
@@ -43,7 +42,8 @@
 }
 .contentServiWork{
   width: 100%;
-  height: 800px;
+  margin-bottom: 150px;
+  height: auto;
   /* position:absolute; */
    /* z-index:3; */
 }
@@ -70,16 +70,18 @@
   display: flex;
   width: 100%;
   height: auto;
-  
   justify-content: space-around;
   flex-direction: row;
   margin-top: 160px;
 }
-.contentParrafoBtn{
+.contentParrafoWork{
+  display: flex;
+  flex-direction:column;
   width: 60%;
+  height: auto;
   background-color: var(--color-quinto);
   height: auto;
-  font-size: 1.6rem;
+  
   color: #fff;
   -webkit-border-top-right-radius: 89px;
 -webkit-border-bottom-left-radius: 89px;
@@ -88,7 +90,137 @@
 border-top-right-radius: 89px;
 border-bottom-left-radius: 89px;
 }
+.titleParrafo{
+  font-size: 2rem;
+}
+.parrafoWork{
+  font-size: 1rem;
+  padding: 10px;
+}
 .imgWork{
-  width: 600px;
-  height: 350px;
+  width: 300px;
+  height: auto;
+}
+.svgServicie{
+  width: 70%;
+}
+
+
+
+
+/* Responsive  Telefono*/
+
+@media screen and (max-width:480px){
+
+  .contentAbout{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    /* margin: 20px; */
+  }
+  .data{
+    width: 100%;
+  }
+  .svgServicie{
+    margin-top: 50px;
+    width: 90%;
+  }
+  .spanProducto{
+    margin: auto;
+    width: 100%;
+    
+  }
+  .contentTitle{
+    font-size: 1.3rem;
+  }
+
+  .contentTitleWorkSpan{
+    width: 90%;
+    height: auto;
+  }
+  .contentPImg{
+   flex-direction:column-reverse;
+    margin-top: 60px;
+  }
+  .imgWork{
+    width: 90%;
+    height: auto;
+  }
+  .contentParrafoWork{
+    margin: auto;
+    width: 90%;
+  }
+  .titleParrafo{
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+  .parrafoWork{
+    font-size: 2rem;
+    padding: 5px;
+  }
+}
+
+ /* RESPONSIVE TABLET */
+
+ @media screen and (min-width:480px) and (max-width:950px){
+ 
+  .contentAbout{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /* margin: 20px; */
+  }
+  .data{
+    width: 100%;
+  }
+  .svgServicie{
+    margin-top: 50px;
+    width: 90%;
+  }
+  .spanProducto{
+    margin: auto;
+    width: 100%;
+    
+  }
+  .contentTitle{
+    font-size: 1.3rem;
+  }
+
+  .contentTitleWorkSpan{
+    width: 90%;
+    height: auto;
+  }
+  .contentPImg{
+   flex-direction:column-reverse;
+    margin-top: 60px;
+  }
+  .imgWork{
+    width: 90%;
+    height: auto;
+  }
+  .contentParrafoWork{
+    margin: auto;
+    width: 90%;
+  }
+  .titleParrafo{
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+  .parrafoWork{
+    font-size: 2rem;
+    padding: 5px;
+  }
+
 }

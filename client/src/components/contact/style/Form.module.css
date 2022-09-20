@@ -2,16 +2,49 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 90vh;
+  height: auto;
+ 
 }
 
 .formItems{
-  margin: 15px !important;
+  margin: 10px !important;
 }
 
 .titleContact{
-  font-size: 60px;
+  font-size: 2.2rem;
 }
 .btn{
-  margin-top: 35px !important;
+  margin: auto !important;
+ width: 80%;
+}
+
+/* Responsive  Telefono*/
+
+@media screen and (max-width:480px){
+
+  .form{
+    width: 90%;
+    margin: auto;
+  }
+  .btn{
+    margin: auto !important;
+    width: 92%;
+  }
+}
+
+ /* RESPONSIVE TABLET */
+
+ @media screen and (min-width:480px) and (max-width:950px){
+ 
+  .form{
+    width: 90%;
+    margin: auto;
+    
+  }
+  .btn{
+    margin: auto !important;
+    width: 100%;
+  }
+
+
 }

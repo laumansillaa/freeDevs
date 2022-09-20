@@ -17,12 +17,11 @@ const Contact = () => {
         <Box className={style.card}>
         <span className={style.titleCard}>Tenes una idea pero no sabes por donde empezar?</span>
         </Box>
-        <Box>
-        <span className={style.span}>No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</span>
+        <Box className={style.span}>
+        <span >No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</span>
         </Box>
        </Box>
        <Box  className={style.contentForm}>
-        
         <Form />
        </Box>
       </Box>

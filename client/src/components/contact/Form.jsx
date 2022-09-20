@@ -23,7 +23,8 @@ export default function BasicTextFields() {
           id="outlined-textarea"
           label="Mensaje"
           placeholder="Redactar"
-          multiline
+          multiline 
+          minRows={4}
         />
          <Button 
          className={style.btn}
