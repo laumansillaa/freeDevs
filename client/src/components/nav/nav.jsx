@@ -18,17 +18,17 @@ const Nav = () => {
         <Box className={style.contNav} >
             <Box className={style.navContainer}>
                 <Box className={style.contImgNav}>
-                    <img src={freeDev} alt='freeDev-svg' className={style.logo}/>
+                    <a href='#inicio'><img src={freeDev} alt='freeDev-svg' className={style.logo}/></a>
                 </Box>
                 <label for='menu' className={style.navLabel}>
                     <img src={menu} alt='menu-svg' className={style.navSvg} />
                 </label>
                 <input type='checkbox' id='menu' className={style.navInput}></input>
                 <Box className={style.contItemsNav}>
-                    <Link to='/a' className={style.navItem} onClick={clickChecked }>Nosotros</Link>
-                    <Link to='#Service' className={style.navItem} onClick={clickChecked}>Servicios</Link>
-                    <Link to='/a' className={style.navItem} onClick={clickChecked}>Proyectos</Link>
-                    <Link to='#Footer' className={style.navItem} onClick={clickChecked}>Contacto</Link>
+                    <a href='#about' className={style.navItem} onClick={clickChecked }>Nosotros</a>
+                    <a href='#service' className={style.navItem} onClick={clickChecked}>Servicios</a>
+                    {/* <a href='/a' className={style.navItem} onClick={clickChecked}>Proyectos</a> */}
+                    <a href='#contact' className={style.navItem} onClick={clickChecked}>Contacto</a>
                 </Box>
                 <Box className={style.contLampara}>
                     <img src={lampara} alt='light-png' className={style.lampara}/>

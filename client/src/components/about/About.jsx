@@ -9,7 +9,7 @@ const About = () => {
 
 
     return (
-        <Box className={style.contAbout}>
+        <Box className={style.contAbout} id='about'>
             <Box className={style.contTitleAbout}>
                 <Typography sx={{
                     fontFamily: 'Bebas Neue',

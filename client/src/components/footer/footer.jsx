@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 const Footer = () => {
 
     return (
-        <Box className={style.contentFooter}>
+        <Box className={style.contentFooter} id='footer'>
            <div className={style.contentLogo}>
             <h1>Logo</h1>
            </div>

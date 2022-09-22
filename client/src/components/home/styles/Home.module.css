@@ -1,10 +1,12 @@
 .containerHome{
     display: flex;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
+    /* margin-top: .rem; */
 }
 
 .containerMotivation{
+    padding-top: 3rem;
     height: auto;
     width: 50%;
     margin-top: 4rem;
@@ -12,7 +14,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 0;
-    /* background: red; */
 }
 
 .motivation{
@@ -79,7 +80,7 @@
     }
 
     .containerMotivation {
-        padding-top: 1rem;
+        padding-top: 2.5rem;
         padding-bottom: 3rem;
         width: 90%;
         display: flex;
@@ -110,16 +111,22 @@
 
     .containerTxtHome{
         width: 100%;
+        padding-left: 0;
     }
 
     .contHomeTxt{
-        width: 60%;
+        width: 70%;
         padding-left: 1rem;
     }
 
     .contHomeTxtTwo{
         width: 80%;
         padding-left: 1rem;
+    }
+
+    .contHomeBtn{
+        padding-left: 1rem;
+
     }
 
     .motivation{
@@ -134,12 +141,40 @@
         width: 100%;
     }
 
+    .containerMotivation{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .contHomeTxt{
         width: 80%;
     }
 
     .contHomeTxtTwo{
         width: 80%;
+    }
+
+    .motivation{
+        width: 85%;
+    }
+
+    .contHomeBtn{
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .containerTxtHome{
+        padding-left: 0rem;
+        width: 100%;
+    }
+
+    .contHomeTxt{
+        width: 90%;
+    }
+
+    .contHomeTxtTwo{
+        width: 90%;
     }
 
     .motivation{

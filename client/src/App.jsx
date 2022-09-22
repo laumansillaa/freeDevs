@@ -1,4 +1,3 @@
-import {Routes, Route} from 'react-router-dom'
 import Home from './components/home/Home'
 import Nav from './components/nav/nav';
 import Servicie from './components/Servicie/Servicie'
@@ -11,7 +10,7 @@ function App() {
 
   return (
 
-    <div className="App">
+    <div className="App" id='inicio'>
         <Nav/>
           <Home/>
           <About/>
