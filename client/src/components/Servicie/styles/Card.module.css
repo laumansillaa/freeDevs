@@ -2,8 +2,8 @@
 
 .card{
   background-color: var(--color-cuarto);
-  width: 40vh;
-  height: 28vh;
+  width: 50vh;
+  height: 37vh;
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
@@ -27,8 +27,8 @@
 }
 .cardSec{
   background-color: var(--color-terciario);
-  width: 40vh;
-  height: 28vh;
+  width: 50vh;
+  height: 37vh;
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
@@ -71,4 +71,44 @@
   text-align: start;
   font-size: 20px;
   color: var(--color-quinto);
+}
+
+/* Responsive telefono */
+
+@media screen and (max-width:480px){
+  .card{
+    width: 35vh;
+    height: auto;
+   
+  }
+  .contentParrafo{
+    width: 80%;
+    margin: auto;
+    height: auto;
+  }
+  .cardSec{
+    width: 35vh;
+    height: auto;
+  
+  }
+ 
+}
+
+ /* RESPONSIVE TABLET */
+
+ @media screen and (min-width:480px) and (max-width:950px){
+  .card{
+    width: 25vh;
+    height: 24vh;
+   
+  }
+  .contentParrafo{
+    width: 80%;
+    margin: auto;
+  }
+  .cardSec{
+    width: 25vh;
+    height: 24vh;
+  }
+ 
 }
