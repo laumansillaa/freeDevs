@@ -7,9 +7,9 @@ const Home = () => {
 
     return (
             <Box>
-                {/* <Box>
-                    <BackgroundParticles/>
-                </Box> */}
+                <Box>
+                    {/* <BackgroundParticles/> */}
+                </Box>
                 <Box>
                     <Box className={style.containerHome}>
                         <Box className={style.containerTxtHome}>

@@ -1,0 +1,50 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+ 
+}
+
+.formItems{
+  margin: 10px !important;
+}
+
+.titleContact{
+  font-size: 2.2rem;
+}
+.btn{
+  margin: auto !important;
+ width: 80%;
+}
+
+/* Responsive  Telefono*/
+
+@media screen and (max-width:480px){
+
+  .form{
+    width: 90%;
+    margin: auto;
+  }
+  .btn{
+    margin: auto !important;
+    width: 92%;
+  }
+}
+
+ /* RESPONSIVE TABLET */
+
+ @media screen and (min-width:480px) and (max-width:950px){
+ 
+  .form{
+    width: 90%;
+    margin: auto;
+    
+  }
+  .btn{
+    margin: auto !important;
+    width: 100%;
+  }
+
+
+}
