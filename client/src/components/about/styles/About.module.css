@@ -63,7 +63,7 @@
         justify-content: center;
         flex-flow: nowrap;
         width: 100%;
-        padding: 0 1rem 0 1rem;
+        /* padding: 0 1rem 0 1rem; */
     }
 
     .contItemTxt{
@@ -80,7 +80,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 0 1rem 0 1rem;
+        /* padding: 0 1rem 0 1rem; */
     }
 
     .contTitleAbout{
@@ -93,6 +93,26 @@
     }
 
     .contAux{
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px){
+    .contAux{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutImg{
+        height: 8rem;
+    }
+
+    .contItem{
+        width: 47%;
+        padding: 0 0rem 0 .5rem;
+
+    }
+
+    .contItemTxt{
         width: 100%;
     }
 }

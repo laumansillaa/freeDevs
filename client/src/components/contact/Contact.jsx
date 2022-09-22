@@ -1,12 +1,13 @@
 import style from "./style/Contact.module.css"
 import {Box } from '@mui/material'
 import Form from "./Form.jsx";
+
 const Contact = () => {
 
   return(
     <>
 
-      <Box className={style.contact}>
+      <Box className={style.contact} id='contact'>
        <Box className={style.contentCards}> 
         <Box className={style.card}>
           <span className={style.titleCard}>Tienes un proyecto panificado y necesita desarrollarlo?</span>
