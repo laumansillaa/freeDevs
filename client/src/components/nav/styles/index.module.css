@@ -80,6 +80,7 @@
 @media (max-width: 730px){
   .navContainer{
       padding-right: 1rem;
+      width: 100%;
   }
 
   .navLabel{
@@ -96,12 +97,14 @@
   }
 
   .contItemsNav{
-      position: fixed;
+      position: absolute;
       top: 75px;
       bottom: 0;
-      background: #1565c0;
+      /* background: #1565c0; */
+      background: #333;
       z-index: 1;
       width: 100%;
+      /* overflow-y: hidden; */
       /* height: 50%; */
       left: 0;
       display: flex;

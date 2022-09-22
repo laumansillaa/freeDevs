@@ -114,10 +114,12 @@
 
     .contHomeTxt{
         width: 60%;
+        padding-left: 1rem;
     }
 
     .contHomeTxtTwo{
         width: 80%;
+        padding-left: 1rem;
     }
 
     .motivation{
@@ -128,19 +130,23 @@
 
 @media screen and (max-width: 480px){
     .containerTxtHome{
-        padding-left: 1.5rem;
+        padding-left: 0rem;
         width: 100%;
     }
 
     .contHomeTxt{
-        width: 100%;
+        width: 80%;
     }
 
     .contHomeTxtTwo{
-        width: 100%;
+        width: 80%;
     }
 
     .motivation{
         width: 85%;
+    }
+
+    .contHomeBtn{
+        padding-left: 1rem;
     }
 }
