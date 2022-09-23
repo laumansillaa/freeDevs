@@ -3,8 +3,19 @@ import emailjs from 'emailjs-com'
 import style from "./style/Form.module.css"
 import {Box, Button} from '@mui/material'
 import TextField from '@mui/material/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+import Alert from '@material-ui/lab/Alert';
 
 export default function BasicTextFields() {
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      width: '100%',
+      '& > * + *': {
+        marginTop: theme.spacing(2),
+      },
+    },
+  }));
 
   const [form, setForm] = useState({
     name: '',
@@ -32,6 +43,7 @@ export default function BasicTextFields() {
     e.target.reset()
   }
 
+  const classes = useStyles();
 
   return (
     <form 
@@ -70,6 +82,11 @@ export default function BasicTextFields() {
                 }}
             type='submit'
           >Enviar</Button>
+       <div className={classes.root}>
+           <Alert variant="filled" severity="success">
+            This is a success alert — check it out!
+      </Alert>
+    </div>
     </form>
   );
 }
