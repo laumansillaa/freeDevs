@@ -8,14 +8,14 @@ import Alert from '@material-ui/lab/Alert';
 
 export default function BasicTextFields() {
 
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '100%',
-      '& > * + *': {
-        marginTop: theme.spacing(2),
-      },
-    },
-  }));
+  // const useStyles = makeStyles((theme) => ({
+  //   root: {
+  //     width: '100%',
+  //     '& > * + *': {
+  //       marginTop: theme.spacing(2),
+  //     },
+  //   },
+  // }));
 
   const [form, setForm] = useState({
     name: '',
@@ -31,7 +31,17 @@ export default function BasicTextFields() {
       [e.target.name] : e.target.value
     })
   }
-
+ function DisableAfterClick() {
+    const [disable, setDisable] = useState(false);
+ }
+const enviar = (e) => {
+  if (form.name && form.phone && form.email && form.asunto && form.text) {
+   
+    sendEmail();
+  } else {
+    alert("completar todos los campos")
+  }
+}
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
@@ -43,7 +53,7 @@ export default function BasicTextFields() {
     e.target.reset()
   }
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <form 
@@ -54,8 +64,8 @@ export default function BasicTextFields() {
       }}
       noValidate
       autoComplete="off"
-      onSubmit={sendEmail}
-    >
+    //    onSubmit={sendEmail}
+     >
       <h1 className={style.titleContact}>Nuestro contacto</h1>
         <TextField className={style.formItems} name='name' id="outlined-basic" label="Name" variant="outlined" onChange={(e) => handleChange(e)} />
         <TextField className={style.formItems} name='phone' id="outlined-basic" label="Telefono" variant="outlined" onChange={(e) => handleChange(e)} />
@@ -72,6 +82,8 @@ export default function BasicTextFields() {
           onChange={(e) => handleChange(e)}
         />
          <Button 
+        disabled={!form.name || !form.phone || !form.email || !form.asunto || !form.text}
+         onClick={enviar}
             className={style.btn}
               variant='contained'
                  sx={{
@@ -82,11 +94,11 @@ export default function BasicTextFields() {
                 }}
             type='submit'
           >Enviar</Button>
-       <div className={classes.root}>
-           <Alert variant="filled" severity="success">
+       {/*  <div className={classes.root}>
+          <Alert variant="filled" severity="success">
             This is a success alert — check it out!
-      </Alert>
-    </div>
+      </Alert> 
+    </div>*/}
     </form>
   );
 }
