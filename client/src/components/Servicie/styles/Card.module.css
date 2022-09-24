@@ -3,7 +3,8 @@
 .card{
   background-color: var(--color-cuarto);
   width: 50vh;
-  height: 37vh;
+  height: 43vh;
+ 
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
@@ -28,7 +29,7 @@
 .cardSec{
   background-color: var(--color-terciario);
   width: 50vh;
-  height: 37vh;
+  height: 43vh;
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
@@ -59,17 +60,20 @@
 }
 .title{
   color: var(--color-quinto);
-  font-size: 25px;
+  font-size: 1.5rem;
+  font-family:'Bebas Neue';
   text-align: end;
 }
 .contentParrafo{
   width: 90%;
   margin: auto;
   height: auto;
+ 
 }
 .parrafo{
   text-align: start;
   font-size: 20px;
+  font-family: 'Poppins';
   color: var(--color-quinto);
 }
 

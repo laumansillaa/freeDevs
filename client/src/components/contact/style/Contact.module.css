@@ -28,12 +28,14 @@
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }.titleCard{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family:'Bebas Neue';
 }
 .span{
   width: 70%;
   margin: auto;
   font-size: 1.4rem;
+  font-family:'Bebas Neue';
 }
 .contentForm{
   width: 50%;

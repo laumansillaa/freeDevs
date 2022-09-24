@@ -9,6 +9,7 @@
   position:inherit;
    z-index:3;
   color: #fff;
+  
 }
 .contentIcons{
   display: flex;
@@ -21,6 +22,7 @@
   border-right: 1px solid #aaa;
   width: 30%;
   height: 32vh;
+  font-family:'Bebas Neue';
 }
 .contentListado{
   width: 30%;
@@ -36,6 +38,7 @@
   justify-content: space-around;
 }
 .li{
+  font-family:'Bebas Neue';
   font-size: 20px;
   padding-bottom: 30px;
 }
@@ -57,6 +60,7 @@
   justify-content: space-around;
   width: 70%;
   margin: auto;
+  font-family:'Bebas Neue';
 }
 .icon{
   color: aliceblue;
