@@ -1,9 +1,9 @@
 @import "../../VarGlobal.css";
 
 .card{
-  background-color: var(--color-cuarto);
-  width: 50vh;
-  height: 43vh;
+  /* background-color: var(--color-cuarto); */
+  width: 35vh;
+  height: 35vh;
  
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
@@ -27,9 +27,9 @@
 
 }
 .cardSec{
-  background-color: var(--color-terciario);
-  width: 50vh;
-  height: 43vh;
+  /* background-color: var(--color-terciario); */
+  width: 35vh;
+  height: 35vh;
   /* border-radius: 15px; */
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
@@ -72,9 +72,9 @@
 }
 .parrafo{
   text-align: start;
-  font-size: 20px;
+  font-size: 0.5rem;
   font-family: 'Poppins';
-  color: var(--color-quinto);
+  color: #000;
 }
 
 /* Responsive telefono */
