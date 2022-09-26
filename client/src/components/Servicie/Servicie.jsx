@@ -3,7 +3,7 @@ import style from "./styles/Servicie.module.css"
 import Card from './CardServicie'
 import svgServicie from '../../assets/svg/FrameServicie.svg';
 import CardSec from './CardSecServicie'
-
+import DarkVariantExample from './Carousel';
 
 const Servicie = () => {
   return(
@@ -50,7 +50,7 @@ const Servicie = () => {
           >Contactanos</Button> */}
         </Box>
         <Box> 
-          <img className={style.imgWork} src="https://i.postimg.cc/qMjR4Stt/undraw-Team-collaboration-re-ow29.png" alt="SpaceWork" />
+         <DarkVariantExample/>
         </Box>
         </Box>
       </Box>
