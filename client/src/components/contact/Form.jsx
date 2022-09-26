@@ -1,12 +1,28 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 import style from "./style/Form.module.css"
-import {Box, Button} from '@mui/material'
+import {Box, Button, Dialog, DialogTitle, DialogContent} from '@mui/material'
 import TextField from '@mui/material/TextField';
-import { makeStyles } from '@material-ui/core/styles';
-import Alert from '@material-ui/lab/Alert';
+import ErrorIcon from '@mui/icons-material/Error';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Alert from '@material-ui/lab/Alert';
 
 export default function BasicTextFields() {
+
+  const [open, setOpen] = useState(null)
+  const [errorModal, setErrorModal] = useState(false)
+  const [form, setForm] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    asunto: '',
+    text: '' 
+  })
+
+  const handleClose = () => {
+      setOpen(false)
+  }
 
   // const useStyles = makeStyles((theme) => ({
   //   root: {
@@ -17,43 +33,66 @@ export default function BasicTextFields() {
   //   },
   // }));
 
-  const [form, setForm] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    asunto: '',
-    text: '' 
-  })
-
   const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name] : e.target.value
     })
   }
- function DisableAfterClick() {
-    const [disable, setDisable] = useState(false);
- }
-const enviar = (e) => {
-  if (form.name && form.phone && form.email && form.asunto && form.text) {
-   
-    sendEmail();
-  } else {
-    alert("completar todos los campos")
-  }
-}
+//  function DisableAfterClick() {
+//     const [disable, setDisable] = useState(false);
+//  }
+
   const sendEmail = (e) => {
     e.preventDefault()
-    emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-   }, function(error) {
-      console.log('FAILED...', error);
-   });
-    e.target.reset()
+    if (form.name && form.phone && form.email && form.asunto && form.text){
+      emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
+      .then(function(response) {
+          setOpen(true)
+          console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+          setErrorModal(true)
+          console.log('FAILED...', error);
+      });
+    } else {
+      alert("completar todos los campos")
+    }
   }
 
-  // const classes = useStyles();
+  const modalDialog = () => {
+    if (open) {
+      return (
+        <Dialog disableEscapeKeyDown open={open} onClose={handleClose} >
+          <Box className={style.dialogCont}>
+            <DialogTitle 
+              className='dialog-title'>{errorModal? 
+                'Ocurrio un error, intente nuevamente.' : 
+                'Mensaje enviado con exito' }
+                </DialogTitle>
+                {
+                  errorModal? 
+                  <ErrorIcon/> :
+                  <CheckCircleIcon/>
+                }
+          </Box>
+            <DialogContent className={style.dialogContButton}>
+                <Box className='dialog-bottons'>
+                    <Button color={errorModal? 
+                    'error': 
+                    'success'} 
+                    variant='contained' 
+                    sx={{ml:1 }}
+                      onClick={handleClose}
+                    >
+                        CERRAR
+                    </Button>
+                </Box>
+           </DialogContent>
+        </Dialog>
+      )
+    } 
+  }
+
 
   return (
     <form 
@@ -83,7 +122,7 @@ const enviar = (e) => {
         />
          <Button 
         disabled={!form.name || !form.phone || !form.email || !form.asunto || !form.text}
-         onClick={enviar}
+         onClick={(e) => sendEmail(e)}
             className={style.btn}
               variant='contained'
                  sx={{
@@ -94,11 +133,13 @@ const enviar = (e) => {
                 }}
             type='submit'
           >Enviar</Button>
-       {/*  <div className={classes.root}>
-          <Alert variant="filled" severity="success">
-            This is a success alert — check it out!
-      </Alert> 
-    </div>*/}
+          
+            {
+              <>
+                {modalDialog()}
+              </>
+            }
+          
     </form>
   );
 }
