@@ -8,7 +8,7 @@ import DarkVariantExample from './Carousel';
 const Servicie = () => {
   return(
     <>
-    <Box className={style.contentAbout} id='service'>
+    <Box className={style.contentAbout} id='servicio'>
       <Box className={style.cards}>
        <Card  title="Desarrollo web" info="desarrollamos soluciones a medida, utilizando las ultimas tecnologias de alto rendimiento y escabilidad, trabajamos persiguiendo tus objetivos"/>
        <CardSec title="Disenio ux/ui" info="Buscamos la mejor experiencia para tus usuarios. Nos enfocamos en que los clientes se lleven experiencias placenteras y asi potncias realaciones, lo que lleva obtener un mejor impacto"/>

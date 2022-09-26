@@ -14,7 +14,7 @@ function App() {
         <Nav/>
           <Home id="home"/>
           <About id="about"/>
-          <Servicie id="servicie"/>
+          <Servicie id="servicio"/>
           <Contact id="contact"/> 
           <Footer/>
     </div>

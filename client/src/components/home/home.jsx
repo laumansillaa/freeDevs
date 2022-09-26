@@ -7,7 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const Home = () => {
 
     return (
-            <Box>
+            <Box id="home">
                 <Box>
                     {/* <BackgroundParticles/> */}
                 </Box>

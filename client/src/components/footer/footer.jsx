@@ -1,6 +1,7 @@
 import {Box, Typography} from '@mui/material'
 import style from "./styles/Footer.module.css"
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { Link, animateScroll as scroll } from "react-scroll";
 const Footer = () => {
 
     return (
@@ -11,11 +12,33 @@ const Footer = () => {
            <div className={style.contentListado}>
             <div className={style.contentUl}>
                 <ul className={style.Ul}>
-                     <li className={style.li}>Home</li>
-                     <li className={style.li}>Nosotros</li>
-                      <li className={style.li}>Servicios</li>
-                       <li className={style.li}>Proyectos</li>
-                       <li className={style.li}>Contacto</li>
+
+                 <li value="home" className={style.li}>
+                     <Link to="home" spy={true} smooth={true} offset={-100} duration={200} >
+                         Home
+                      </Link>
+                   </li>
+             
+                
+               <li value="about" className={style.li}>
+                  <Link to="about" spy={true} smooth={true} offset={-100} duration={200} >
+                      Nosotros
+                </Link>
+              </li>
+               
+              <li value='servicio' className={style.li}>
+                 <Link to="servicio" spy={true} smooth={true} offset={-100} duration={200} >
+                   Servicios
+                 </Link>
+               </li>
+              
+                
+                 <li value='contact' className={style.li}>
+                    <Link to="contact" spy={true} smooth={true} offset={-100} duration={200}  >
+                      Contacto
+                    </Link>
+                 </li>
+               
             </ul>
             </div>
             <h4 className={style.title}> 2022 © Todos los derechos reservados a FreeDevs</h4>

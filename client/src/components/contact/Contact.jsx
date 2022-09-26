@@ -27,7 +27,7 @@ const Contact = () => {
         <Form />
        </Box>
        <Box className={style.contHomeBtn}>
-          <Link to="/" spy={true} smooth={true} offset={-100} duration={300}>
+          <Link to="home" spy={true} smooth={true} offset={-100} duration={300}>
               <FloatingActionButtons/>
           </Link>
                                
