@@ -41,6 +41,10 @@
   width: 50%;
   height: auto; 
 }
+.contHomeBtn{
+  display: flex ;
+  align-items: flex-end;
+}
 
 /* Responsive  Telefono*/
 
@@ -79,6 +83,10 @@
     width: 100%;
     height: auto; 
     
+  }
+  .contHomeBtn{
+    margin-top: 20px;
+    justify-content: end;
   }
 }
 
@@ -123,5 +131,9 @@
     width: 100%;
     height: auto; 
     
+  }
+  .contHomeBtn{
+    margin-top: 20px;
+    justify-content: end;
   }
 }

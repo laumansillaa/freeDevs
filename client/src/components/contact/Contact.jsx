@@ -1,7 +1,8 @@
 import style from "./style/Contact.module.css"
 import {Box } from '@mui/material'
 import Form from "./Form.jsx";
-
+import FloatingActionButtons from "./BtnFlotante";
+import { Link, animateScroll as scroll } from "react-scroll";
 const Contact = () => {
 
   return(
@@ -24,6 +25,12 @@ const Contact = () => {
        </Box>
        <Box  className={style.contentForm}>
         <Form />
+       </Box>
+       <Box className={style.contHomeBtn}>
+          <Link to="/" spy={true} smooth={true} offset={-100} duration={300}>
+              <FloatingActionButtons/>
+          </Link>
+                               
        </Box>
       </Box>
 

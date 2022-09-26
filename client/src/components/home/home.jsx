@@ -1,8 +1,9 @@
 import { Box, Typography, Button } from '@mui/material';
 import frase from '../../assets/svg/frase.svg'
 import BackgroundParticles from '../particles';
+import FloatingActionButtons from './BtnFlotante';
 import style from './styles/Home.module.css'
-
+import { Link, animateScroll as scroll } from "react-scroll";
 const Home = () => {
 
     return (
@@ -32,15 +33,10 @@ const Home = () => {
                                 >Converti tus ideas en grandes experiencias digitales</Typography>
                             </Box>
                             <Box className={style.contHomeBtn}>
-                                <Button
-                                    variant='contained'
-                                    sx={{
-                                        background: '#154AB1',
-                                        fontFamily: 'Bebas Neue',
-                                        letterSpacing: '.1rem',
-                                        fontSize: '1.2rem'
-                                    }}
-                                >Contactanos</Button>
+                                <Link to="about" spy={true} smooth={true} offset={-100} duration={300}>
+                                  <FloatingActionButtons/>
+                                </Link>
+                               
                             </Box>
                         </Box>
                         <Box className={style.containerMotivation}>
