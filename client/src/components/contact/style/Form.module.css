@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 80%;
   height: auto;
- 
 }
 
 .formItems{
@@ -17,6 +16,19 @@
 .btn{
   margin: auto !important;
  width: 80%;
+}
+
+.dialogCont{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dialogContButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive  Telefono*/
