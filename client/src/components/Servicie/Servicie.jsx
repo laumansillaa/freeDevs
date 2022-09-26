@@ -49,7 +49,7 @@ const Servicie = () => {
                 }}
           >Contactanos</Button> */}
         </Box>
-        <Box> 
+        <Box className={style.contentCarousel}> 
          <DarkVariantExample/>
         </Box>
         </Box>

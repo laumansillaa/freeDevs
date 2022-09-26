@@ -1,18 +1,17 @@
 @import "../../VarGlobal.css";
 
 .card{
-  /* background-color: var(--color-cuarto); */
+ background-color: #fff;
   width: 35vh;
-  height: 35vh;
- 
-  /* border-radius: 15px; */
+  height: 25vh;
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
   -webkit-border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  
   box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
@@ -27,18 +26,16 @@
 
 }
 .cardSec{
-  /* background-color: var(--color-terciario); */
+  background-color: #fff;
   width: 35vh;
-  height: 35vh;
-  /* border-radius: 15px; */
+  height: 25vh;
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
   -webkit-border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
-  margin-top: 17vh;
- 
+  margin-top: 10vh;
   box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
@@ -56,13 +53,14 @@
 .contentTitle{
   margin: auto;
   width: 90%;
-  
+ 
 }
 .title{
   color: var(--color-quinto);
   font-size: 1.5rem;
   font-family:'Bebas Neue';
   text-align: end;
+  margin-top: 10px;
 }
 .contentParrafo{
   width: 90%;
@@ -72,7 +70,7 @@
 }
 .parrafo{
   text-align: start;
-  font-size: 0.5rem;
+  font-size: .7rem;
   font-family: 'Poppins';
   color: #000;
 }
@@ -101,9 +99,10 @@
  /* RESPONSIVE TABLET */
 
  @media screen and (min-width:480px) and (max-width:950px){
+  
   .card{
     width: 25vh;
-    height: 24vh;
+    height: 14vh;
    
   }
   .contentParrafo{
@@ -112,7 +111,7 @@
   }
   .cardSec{
     width: 25vh;
-    height: 24vh;
+    height: 14vh;
   }
  
 }

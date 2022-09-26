@@ -5,6 +5,7 @@ import {Box, Button, Dialog, DialogTitle, DialogContent, Alert, AlertTitle} from
 import TextField from '@mui/material/TextField';
 import ErrorIcon from '@mui/icons-material/Error';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { FaTelegramPlane } from "react-icons/fa";
 // import { makeStyles } from '@material-ui/core/styles';
 // import Alert from '@material-ui/lab/Alert';
 
@@ -95,7 +96,7 @@ export default function BasicTextFields() {
       noValidate
       autoComplete="off"
      >
-      <h1 className={style.titleContact}>Nuestro contacto</h1>
+      <h1 className={style.titleContact}> <FaTelegramPlane/> Nuestro contacto</h1>
         <TextField className={style.formItems} name='name' id="outlined-basic" label="Name" variant="outlined" onChange={(e) => handleChange(e)} />
         <TextField className={style.formItems} name='phone' id="outlined-basic" label="Telefono" variant="outlined" onChange={(e) => handleChange(e)} />
         <TextField className={style.formItems} name='email' id="outlined-basic" label="Email" variant="outlined" onChange={(e) => handleChange(e)} />
