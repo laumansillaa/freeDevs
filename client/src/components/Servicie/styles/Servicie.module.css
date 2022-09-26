@@ -87,7 +87,7 @@
   height: auto;
   background-color: var(--color-quinto);
   height: auto;
-  
+  justify-content: center;
   color: #fff;
   -webkit-border-top-right-radius: 89px;
 -webkit-border-bottom-left-radius: 89px;
@@ -101,7 +101,7 @@ border-bottom-left-radius: 89px;
   font-family:'Bebas Neue';
 }
 .parrafoWork{
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px;
   font-family: 'Poppins';
 }

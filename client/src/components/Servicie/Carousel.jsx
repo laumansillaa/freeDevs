@@ -24,8 +24,9 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5>SCRUM</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
-         
+          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus 
+            necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto 
+            perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -37,8 +38,9 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5>Realizamos encuestas</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
-            
+          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus
+             necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto
+              perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -50,8 +52,9 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5>Comunicacion</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
-          
+          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus 
+            necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto 
+            perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
           </p>
         </Carousel.Caption>
       </Carousel.Item>
