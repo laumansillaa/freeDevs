@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 import style from "./style/Form.module.css"
-import {Box, Button, Dialog, DialogTitle, DialogContent} from '@mui/material'
+import {Box, Button, Dialog, DialogTitle, DialogContent, Alert, AlertTitle} from '@mui/material'
 import TextField from '@mui/material/TextField';
 import ErrorIcon from '@mui/icons-material/Error';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -62,36 +62,27 @@ export default function BasicTextFields() {
   const modalDialog = () => {
     if (open) {
       return (
-        <Dialog disableEscapeKeyDown open={open} onClose={handleClose} >
-          <Box className={style.dialogCont}>
-            <DialogTitle 
-              className='dialog-title'>{errorModal? 
-                'Ocurrio un error, intente nuevamente.' : 
-                'Mensaje enviado con exito' }
-                </DialogTitle>
-                {
-                  errorModal? 
-                  <ErrorIcon/> :
-                  <CheckCircleIcon/>
-                }
-          </Box>
-            <DialogContent className={style.dialogContButton}>
-                <Box className='dialog-bottons'>
-                    <Button color={errorModal? 
-                    'error': 
-                    'success'} 
-                    variant='contained' 
-                    sx={{ml:1 }}
-                      onClick={handleClose}
-                    >
-                        CERRAR
-                    </Button>
-                </Box>
-           </DialogContent>
-        </Dialog>
+        <Alert severity={errorModal? 'error' : 'success'}
+          sx={{
+            fontFamily: 'Poppins',
+            fontSize: '.9rem',
+            mt: '1rem',
+            display: 'flex',
+
+          }}
+        >
+          {
+            errorModal? 'No pudimos enviar el mensaje. Por favor intentelo nuevamente' :
+            'Enviado! Nuestro equipo se pondra en contacto con usted'
+          }
+        </Alert>
       )
     } 
   }
+
+  if (open) (
+    setTimeout(setOpen, 4000, null)
+  )
 
 
   return (
@@ -103,7 +94,6 @@ export default function BasicTextFields() {
       }}
       noValidate
       autoComplete="off"
-    //    onSubmit={sendEmail}
      >
       <h1 className={style.titleContact}>Nuestro contacto</h1>
         <TextField className={style.formItems} name='name' id="outlined-basic" label="Name" variant="outlined" onChange={(e) => handleChange(e)} />
@@ -131,7 +121,6 @@ export default function BasicTextFields() {
                    letterSpacing: '.2rem',
                    fontSize: '1.2rem'
                 }}
-            type='submit'
           >Enviar</Button>
           
             {
