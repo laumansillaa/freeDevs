@@ -20,7 +20,7 @@ const Nav = () => {
                 <Box className={style.contImgNav}>
                     <Link to="home" spy={true} smooth={true} offset={-100} duration={200}><img src={freeDev} alt='freeDev-svg' className={style.logo}/></Link>
                 </Box>
-                <label for='menu' className={style.navLabel}>
+                <label for= 'menu' className={style.navLabel}>
                     <img src={menu} alt='menu-svg' className={style.navSvg} />
                 </label>
                 <input type='checkbox' id='menu' className={style.navInput}></input>

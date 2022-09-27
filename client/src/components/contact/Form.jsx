@@ -1,17 +1,20 @@
 import {useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 import style from "./style/Form.module.css"
-import {Box, Button, Dialog, DialogTitle, DialogContent, Alert, AlertTitle} from '@mui/material'
+import {Box, Button, Alert, Typography} from '@mui/material'
+import LoadingButton from '@mui/lab/LoadingButton';
 import TextField from '@mui/material/TextField';
-import ErrorIcon from '@mui/icons-material/Error';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import validateEmail from '../utils/utils.js'
+import {useNavigate} from 'react-router-dom'
 // import { makeStyles } from '@material-ui/core/styles';
 // import Alert from '@material-ui/lab/Alert';
 
 export default function BasicTextFields() {
 
+  const navigate = useNavigate()
   const [open, setOpen] = useState(null)
   const [errorModal, setErrorModal] = useState(false)
+  const [emailError, setEmailError] = useState(false)
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -20,18 +23,14 @@ export default function BasicTextFields() {
     text: '' 
   })
 
-  const handleClose = () => {
-      setOpen(false)
-  }
+  useEffect(() => {
+    validateEmail(form.email)? setEmailError(false) : setEmailError(true)
+  }, [form.email])
 
-  // const useStyles = makeStyles((theme) => ({
-  //   root: {
-  //     width: '100%',
-  //     '& > * + *': {
-  //       marginTop: theme.spacing(2),
-  //     },
-  //   },
-  // }));
+  useEffect(() => {
+    closeError()
+  }, [open])
+
 
   const handleChange = (e) => {
     setForm({
@@ -39,9 +38,6 @@ export default function BasicTextFields() {
       [e.target.name] : e.target.value
     })
   }
-//  function DisableAfterClick() {
-//     const [disable, setDisable] = useState(false);
-//  }
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -49,6 +45,7 @@ export default function BasicTextFields() {
       emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
       .then(function(response) {
           setOpen(true)
+          setReset(true)
           console.log('SUCCESS!', response.status, response.text);
       }, function(error) {
           setErrorModal(true)
@@ -67,8 +64,6 @@ export default function BasicTextFields() {
             fontFamily: 'Poppins',
             fontSize: '.9rem',
             mt: '1rem',
-            display: 'flex',
-
           }}
         >
           {
@@ -80,14 +75,17 @@ export default function BasicTextFields() {
     } 
   }
 
-  if (open) (
-    setTimeout(setOpen, 4000, null)
-  )
+  const closeError = () => {
+    if (open) {
+      setTimeout(setOpen, 4000, null)
+      const reload = window.location.reload()
+    } 
+  }
 
 
   return (
     <form 
-    className={style.form}
+      className={style.form}
       component="form"
       sx={{
         '& > :not(style)': { m: 1, width: '25ch' },
@@ -99,6 +97,15 @@ export default function BasicTextFields() {
         <TextField className={style.formItems} name='name' id="outlined-basic" label="Name" variant="outlined" onChange={(e) => handleChange(e)} />
         <TextField className={style.formItems} name='phone' id="outlined-basic" label="Telefono" variant="outlined" onChange={(e) => handleChange(e)} />
         <TextField className={style.formItems} name='email' id="outlined-basic" label="Email" variant="outlined" onChange={(e) => handleChange(e)} />
+        {emailError ? 
+            <Typography sx={{
+              fontFamily: 'Poppins',
+              fontSize: '.8rem',
+              color: 'red'
+            }}>
+              Ingrese un email valido
+            </Typography> : <></>
+        }
         <TextField className={style.formItems} name='asunto' id="outlined-basic" label="Asunto" variant="outlined" onChange={(e) => handleChange(e)}/>
         <TextField
         className={style.formItems}
@@ -110,18 +117,18 @@ export default function BasicTextFields() {
           name='text'
           onChange={(e) => handleChange(e)}
         />
-         <Button 
-        disabled={!form.name || !form.phone || !form.email || !form.asunto || !form.text}
-         onClick={(e) => sendEmail(e)}
+         <LoadingButton 
+            disabled={!form.name || !form.phone || !form.email || !form.asunto || !form.text}
+            onClick={(e) => sendEmail(e)}
             className={style.btn}
-              variant='contained'
-                 sx={{
-                   background: '#154AB1',
-                   fontFamily: 'Bebas Neue',
-                   letterSpacing: '.2rem',
-                   fontSize: '1.2rem'
-                }}
-          >Enviar</Button>
+            variant='contained'
+            sx={{
+              background: '#154AB1',
+              fontFamily: 'Bebas Neue',
+              letterSpacing: '.2rem',
+              fontSize: '1.2rem'
+          }}
+          >Enviar</LoadingButton>
           
             {
               <>
