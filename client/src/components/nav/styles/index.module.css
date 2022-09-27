@@ -102,7 +102,7 @@
 
   .contItemsNav{
       position: absolute;
-      top: 75px;
+      top: 71px;
       bottom: 0;
       /* background: #1565c0; */
       background: #333;
@@ -125,6 +125,10 @@
 }
 
 @media (max-width: 900px){
+  .contNav{
+    opacity: 100%;
+    position: static;
+  }
 
   .logo{
       height: 2rem;
