@@ -1,16 +1,16 @@
 import { Box, Typography, Button } from '@mui/material';
 import frase from '../../assets/svg/frase.svg'
 import BackgroundParticles from '../particles';
-import FloatingActionButtons from './BtnFlotante';
 import style from './styles/Home.module.css'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
 
     return (
             <Box id="home">
-                <Box>
-                    {/* <BackgroundParticles/> */}
-                </Box>
+                {/* <Box>
+                    <BackgroundParticles/>
+                </Box> */}
                 <Box>
                     <Box className={style.containerHome}>
                         <Box className={style.containerTxtHome}>
@@ -21,28 +21,51 @@ const Home = () => {
                                         fontSize: '2.8rem',
                                         color: '#000'
                                     }}
-                                >Codeamos soluciones para una vida mejor</Typography>
+                                > <span className={style.spn}>Codeamos</span> soluciones para una vida mejor
+                                </Typography>
                             </Box>
                             <Box className={style.contHomeTxtTwo}>
                                 <Typography 
                                     sx={{
                                         fontFamily: 'Bebas Neue',
-                                        fontSize: '2.8rem',
+                                        fontSize: '2.5rem',
                                         color: '#000',
                                     }}
-                                >Converti tus ideas en grandes experiencias digitales</Typography>
+                                >
+                                    
+                                    <span className={style.spn}>Converti</span> tus ideas en grandes experiencias digitales
+                                    
+                                   </Typography>
                             </Box>
-                            <Box className={style.contHomeBtn}>
-                                <Link to="about" spy={true} smooth={true} offset={-100} duration={300}>
-                                  <FloatingActionButtons/>
-                                </Link>
-                               
-                            </Box>
+                          
                         </Box>
                         <Box className={style.containerMotivation}>
-                                <img src={frase} alt='motivation-svg' className={style.motivation}/>
-                            {/* <Box>
-                            </Box> */}
+                             <Box className={style.contentImg}>
+                                 <img src={frase} alt='motivation-svg' className={style.motivation}/>
+                             </Box>
+                                <Box className={style.contIcons} >
+                                <TypeWriterEffect
+        textStyle={{
+          fontFamily: 'Poppins',
+          color: '#000',
+          fontWeight: 500,
+          fontSize: '1.5em',
+        }}
+        startDelay={2000}
+        cursorColor="#000"
+        multiText={[
+          'Que hacemos?',
+          'Desarrollo Web',
+          'Aplicaciones Mobile',
+          'Disenio Ux/Ui',
+          'Seguinos en redes...',
+        ]}
+        multiTextDelay={2000}
+        typeSpeed={30}
+      />
+                                    <FaInstagram className={style.icon}/>
+                                   <FaLinkedin className={style.icon}/>
+                                </Box>
                         </Box>
                     </Box>
                 </Box>
