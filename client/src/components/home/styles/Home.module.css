@@ -13,7 +13,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    z-index: 0;
 }
 
 .motivation{
@@ -36,13 +35,11 @@
     width: 70%;
     text-align: start;
     margin-bottom: 1.5rem;
-    z-index: 1;
 }
 
 .contHomeTxtTwo{
     width: 100%;
     text-align: start;
-    z-index: 1;
     /* border: 2px solid red; */
 }
 
@@ -51,6 +48,7 @@
     justify-content: flex-end;
     margin-top: 6rem;
 }
+
 
 @media (max-width: 894px){
     .containerTxtHome{

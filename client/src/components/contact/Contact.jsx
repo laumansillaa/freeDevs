@@ -11,13 +11,13 @@ const Contact = () => {
       <Box className={style.contact} id='contact'>
        <Box className={style.contentCards}> 
         <Box className={style.card}>
-          <span className={style.titleCard}>Tienes un proyecto panificado y necesita desarrollarlo?</span>
+          <span className={style.titleCard}>¿Tenes un proyecto panificado y necesitas desarrollarlo?</span>
         </Box>
         <Box className={style.card}>
-        <span className={style.titleCard}>Queres que tu negocio empiece a crecer?</span>
+        <span className={style.titleCard}>¿Queres que tu negocio empiece a crecer?</span>
         </Box>
         <Box className={style.card}>
-        <span className={style.titleCard}>Tenes una idea pero no sabes por donde empezar?</span>
+        <span className={style.titleCard}>¿Tenes una idea pero no sabes por donde empezar?</span>
         </Box>
         <Box className={style.span}>
         <Typography sx={{
@@ -33,7 +33,6 @@ const Contact = () => {
           <Link to="home" spy={true} smooth={true} offset={-100} duration={300}>
               <FloatingActionButtons/>
           </Link>
-                               
        </Box>
       </Box>
 

@@ -25,14 +25,15 @@ const Nav = () => {
                 </label>
                 <input type='checkbox' id='menu' className={style.navInput}></input>
                 <Box className={style.contItemsNav}>
+                    <Link href='/a' className={style.navItem} onClick={clickChecked}>Inicio</Link>
                     <Link to="about" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked }>Nosotros</Link>
                     <Link to="servicio" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Servicios</Link>
                     {/* <a href='/a' className={style.navItem} onClick={clickChecked}>Proyectos</a> */}
                     <Link to="contact" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Contacto</Link>
                 </Box>
-                <Box className={style.contLampara}>
+                {/* <Box className={style.contLampara}>
                     <img src={lampara} alt='light-png' className={style.lampara}/>
-                </Box>
+                </Box> */}
             </Box>
             
         </Box>
