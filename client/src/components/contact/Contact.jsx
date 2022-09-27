@@ -1,5 +1,5 @@
 import style from "./style/Contact.module.css"
-import {Box } from '@mui/material'
+import {Box, Typography } from '@mui/material'
 import Form from "./Form.jsx";
 import FloatingActionButtons from "./BtnFlotante";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -20,7 +20,10 @@ const Contact = () => {
         <span className={style.titleCard}>Tenes una idea pero no sabes por donde empezar?</span>
         </Box>
         <Box className={style.span}>
-        <span >No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</span>
+        <Typography sx={{
+          fontFamily: 'Bebas Neue',
+          fontSize: '1.8rem'
+        }} >No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</Typography>
         </Box>
        </Box>
        <Box  className={style.contentForm}>
