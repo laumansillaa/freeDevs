@@ -75,22 +75,17 @@
     border-bottom: 1px solid #aaa;
   }
 
-  .Ul{
-    display: flex;
-    flex-direction: column;
-  }
-  .li{
-    padding-top: 20px;
-  }
-  .contentListado{
-    margin: 3vh;
-    width: 90%;
-  }
+
   .contentIConsEmail{
     width: 90%;
   }
   .icon{
     padding: 5px;
+    font-size: 2rem;
+  }
+  .title{
+    margin-top: 2rem;
+    font-size: .5rem;
   }
 }
 
@@ -118,6 +113,7 @@
  
   .title{
     font-size: 1.5rem;
+    margin-top: 5vh;
   }
   
   .contentIConsEmail{
@@ -125,7 +121,8 @@
   }
   .icon{
     padding: 5px;
-    font-size: 10vh !important;
+
+    font-size: 5vh !important;
   }
 
 }
