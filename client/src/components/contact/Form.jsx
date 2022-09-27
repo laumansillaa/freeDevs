@@ -2,16 +2,14 @@ import {useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 import style from "./style/Form.module.css"
 import {Box, Button, Alert, Typography} from '@mui/material'
-import LoadingButton from '@mui/lab/LoadingButton';
 import TextField from '@mui/material/TextField';
 import validateEmail from '../utils/utils.js'
-import {useNavigate} from 'react-router-dom'
+import { FaTelegramPlane } from "react-icons/fa";
 // import { makeStyles } from '@material-ui/core/styles';
 // import Alert from '@material-ui/lab/Alert';
 
 export default function BasicTextFields() {
 
-  const navigate = useNavigate()
   const [open, setOpen] = useState(null)
   const [errorModal, setErrorModal] = useState(false)
   const [emailError, setEmailError] = useState(false)
@@ -117,7 +115,7 @@ export default function BasicTextFields() {
           name='text'
           onChange={(e) => handleChange(e)}
         />
-         <LoadingButton 
+         <Button 
             disabled={!form.name || !form.phone || !form.email || !form.asunto || !form.text}
             onClick={(e) => sendEmail(e)}
             className={style.btn}
@@ -128,7 +126,7 @@ export default function BasicTextFields() {
               letterSpacing: '.2rem',
               fontSize: '1.2rem'
           }}
-          >Enviar</LoadingButton>
+          >Enviar</Button>
           
             {
               <>

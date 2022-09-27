@@ -88,6 +88,7 @@
 .contentParrafoWork{
   display: flex;
   flex-direction:column;
+  margin-left: 1rem;
   width: 60%;
   height: auto;
   background-color: var(--color-quinto);

@@ -1,4 +1,4 @@
-import Home from './components/home/Home'
+import Home from './components/home/home'
 import Nav from './components/nav/nav';
 import Servicie from './components/Servicie/Servicie'
 import './App.css'
