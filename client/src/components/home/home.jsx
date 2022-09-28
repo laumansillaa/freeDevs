@@ -3,6 +3,7 @@ import frase from '../../assets/svg/frase.svg'
 import BackgroundParticles from '../particles';
 import style from './styles/Home.module.css'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Efc from './Efc';
 // import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
 
@@ -63,6 +64,7 @@ const Home = () => {
                                     multiTextDelay={2000}
                                     typeSpeed={30}
                                 /> */}
+                                 <Efc/>
                                     <FaInstagram className={style.icon}/>
                                     <FaLinkedin className={style.icon}/>
                             </Box>

@@ -1,0 +1,28 @@
+.contenEfecto{
+  width: 100px;
+  margin: auto;
+  
+}
+
+
+.titleEfc{
+  margin:auto;
+  font-size: 1rem;
+  display: block;
+  font-family: 'Poppins', sans-serif; 
+  white-space: nowrap;
+  border-right: 2px solid;
+  width:  20ch;
+  animation: typing 2s steps(20),
+  blink 2s infinite step-end alternate;
+  overflow:hidden;
+}
+
+
+@keyframes typing{
+  from{width: 0;}
+  
+}
+@keyframes blink{
+  50% {border-color:transparent}
+}
