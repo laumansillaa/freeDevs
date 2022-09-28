@@ -3,7 +3,7 @@ import frase from '../../assets/svg/frase.svg'
 import BackgroundParticles from '../particles';
 import style from './styles/Home.module.css'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-import TypeWriterEffect from 'react-typewriter-effect';
+// import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
 
     return (
@@ -44,7 +44,7 @@ const Home = () => {
                                  <img src={frase} alt='motivation-svg' className={style.motivation}/>
                              </Box>
                             <Box className={style.contIcons} >
-                                <TypeWriterEffect
+                                {/* <TypeWriterEffect
                                     textStyle={{
                                     fontFamily: 'Poppins',
                                     color: '#000',
@@ -62,7 +62,7 @@ const Home = () => {
                                     ]}
                                     multiTextDelay={2000}
                                     typeSpeed={30}
-                                />
+                                /> */}
                                     <FaInstagram className={style.icon}/>
                                     <FaLinkedin className={style.icon}/>
                             </Box>
