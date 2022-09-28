@@ -70,24 +70,48 @@
     justify-content: flex-end;
     margin-top: 6rem;
 }
-
+/* //tablet */
 @media (max-width: 894px){
+    .containerHome{
+        flex-direction: column;
+    }
+    .containerMotivation{
+        background-color: aqua;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    
     .containerTxtHome{
         width: 60%;
+        height: auto;
     }
-
-    .containerMotivation{
-        width: 40%;
+    .contentImg{
+     width: 80%;
+     height: auto;
+     background-color: bisque;
+     margin-top: 5vh;
+     margin-left: 0;
     }
-
-    .contHomeTxt{
-        width: 70%;
+  .motivation{
+    width: 60vh ;
+  }
+ .contHomeTxt{
+      width: 70%;
     }
 
     .contHomeTxtTwo{
         width: 100%
     }
 
+    .contIcons{
+        margin-top: 5vh;
+    }
+    .icon{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
 }
 
 
@@ -97,6 +121,7 @@
         flex-direction: column-reverse;
         height: 100%;
         padding-bottom: 4rem;
+        flex-direction: column;
     }
 
     .containerMotivation {
@@ -105,14 +130,13 @@
         width: 90%;
         display: flex;
         justify-content: end;
+        
     }
 
-    .motivation{
-        width: 50%;
-    }
+ 
 
 }
-
+/* Responsive Telefono */
 @media screen and (max-width: 602px) {
     .containerHome{
         display: flex;
@@ -162,10 +186,16 @@
         width: 100%;
     }
 
-    .containerMotivation{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+    .contentImg{
+        width: 80%;
+        height: auto;
+        background-color: bisque;
+        margin-top: 5vh;
+        margin-left: 0;
+       }
+     .motivation{
+       width: 60vh ;
+     }
 
     .contHomeTxt{
         width: 80%;
@@ -175,13 +205,16 @@
         width: 80%;
     }
 
-    .motivation{
-        width: 85%;
-    }
-
     .contHomeBtn{
         padding-left: 1rem;
         margin-top: 1rem;
+    }
+    .contIcons{
+        margin-top: 5vh;
+    }
+    .icon{
+        font-size: 2rem;
+        margin-left: 20px;
     }
 }
 
