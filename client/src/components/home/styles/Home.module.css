@@ -57,7 +57,7 @@
 }
 
 .contHomeTxtTwo{
-    width: 100%;
+    width: 70%;
     text-align: start;
     /* border: 2px solid red; */
 }
@@ -73,7 +73,7 @@
         flex-direction: column;
     }
     .containerMotivation{
-        background-color: aqua;
+        /* background-color: aqua; */
         width: 100%;
         display: flex;
         align-items: center;
@@ -87,7 +87,7 @@
     .contentImg{
      width: 80%;
      height: auto;
-     background-color: bisque;
+     /* background-color: bisque; */
      margin-top: 5vh;
      margin-left: 0;
     }
@@ -137,7 +137,7 @@
 @media screen and (max-width: 602px) {
     .containerHome{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 100%;
         padding-bottom: 4rem;
     }
@@ -179,19 +179,19 @@
 @media screen and (max-width: 480px){
     .containerTxtHome{
         padding-left: 0rem;
-        margin-top: 0;
+        margin-top: 3rem;
         width: 100%;
     }
 
     .contentImg{
         width: 80%;
         height: auto;
-        background-color: bisque;
+        /* background-color: bisque; */
         margin-top: 5vh;
         margin-left: 0;
-       }
+    }
      .motivation{
-       width: 60vh ;
+       width: 20rem;
      }
 
     .contHomeTxt{
@@ -206,8 +206,18 @@
         padding-left: 1rem;
         margin-top: 1rem;
     }
+
+    .containerMotivation{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .contIcons{
+        padding-right: .8rem;
         margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        width: 90%;
     }
     .icon{
         font-size: 2rem;

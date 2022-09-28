@@ -43,29 +43,29 @@ const Home = () => {
                              <Box className={style.contentImg}>
                                  <img src={frase} alt='motivation-svg' className={style.motivation}/>
                              </Box>
-                                <Box className={style.contIcons} >
+                            <Box className={style.contIcons} >
                                 <TypeWriterEffect
-        textStyle={{
-          fontFamily: 'Poppins',
-          color: '#000',
-          fontWeight: 500,
-          fontSize: '1.5em',
-        }}
-        startDelay={2000}
-        cursorColor="#000"
-        multiText={[
-          'Que hacemos?',
-          'Desarrollo Web',
-          'Aplicaciones Mobile',
-          'Disenio Ux/Ui',
-          'Seguinos en redes...',
-        ]}
-        multiTextDelay={2000}
-        typeSpeed={30}
-      />
+                                    textStyle={{
+                                    fontFamily: 'Poppins',
+                                    color: '#000',
+                                    fontWeight: 500,
+                                    fontSize: '1.5em',
+                                    }}
+                                    startDelay={2000}
+                                    cursorColor="#000"
+                                    multiText={[
+                                    'Que hacemos?',
+                                    'Desarrollo Web',
+                                    'Aplicaciones Mobile',
+                                    'Diseño UX/UI',
+                                    'Seguinos en redes...',
+                                    ]}
+                                    multiTextDelay={2000}
+                                    typeSpeed={30}
+                                />
                                     <FaInstagram className={style.icon}/>
-                                   <FaLinkedin className={style.icon}/>
-                                </Box>
+                                    <FaLinkedin className={style.icon}/>
+                            </Box>
                         </Box>
                     </Box>
                 </Box>

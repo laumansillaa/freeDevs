@@ -1,9 +1,12 @@
 @import "../../VarGlobal.css";
 
 .card{
+  /* border: 2px solid red; */
  background-color: #fff;
-  width: 35vh;
-  height: 25vh;
+  /* width: 35vh;
+  height: 25vh; */
+  width: 70%;
+  height: 60%;
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
   -webkit-border-bottom-left-radius: 40px;
@@ -11,7 +14,7 @@
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
   margin-top: 5vh;
-  
+  padding: 0 0 1rem 0;
   box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -webkit-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
   -moz-box-shadow: 8px 7px 22px 3px rgba(17,50,64,0.68);
@@ -27,8 +30,10 @@
 }
 .cardSec{
   background-color: #fff;
-  width: 35vh;
-  height: 25vh;
+  /* width: 35vh;
+  height: 25vh; */
+  width: 70%;
+  height: 60%;
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-right-radius: 40px;
   -webkit-border-bottom-left-radius: 40px;
@@ -53,6 +58,7 @@
 .contentTitle{
   margin: auto;
   width: 75%;
+  height: 15%;
  
 }
 .title{
@@ -64,6 +70,7 @@
 }
 .contentParrafo{
   width: 90%;
+  height: 85%;
   margin: auto;
   height: auto;
  
@@ -81,7 +88,6 @@
   .card{
     width: 35vh;
     height: auto;
-   
   }
 
   .title{
@@ -100,18 +106,18 @@
   .cardSec{
     width: 35vh;
     height: auto;
-  
   }
- 
 }
 
  /* RESPONSIVE TABLET */
 
- @media screen and (min-width:480px) and (max-width:950px){
+ @media screen and (min-width:750px) and (max-width:950px){
   
   .card{
-    width: 25vh;
-    height: 14vh;
+    /* width: 25vh;
+    height: 14vh; */
+    width: 60%;
+    height: 80%;
    
   }
   .contentParrafo{
@@ -119,8 +125,31 @@
     margin: auto;
   }
   .cardSec{
-    width: 25vh;
-    height: 14vh;
+    /* width: 25vh;
+    height: 14vh; */
+    width: 60%;
+    height: 80%;
   }
- 
+}
+
+@media (max-width: 750px){
+  .card{
+    height: 80%;
+  }
+
+  .cardSec{
+    height: 80%;
+  }
+}
+
+@media (max-width: 550px){
+  .card{
+    width: 90%;
+    height: 80%;
+  }
+
+  .cardSec{
+    width: 90%;
+    height: 80%;
+  }
 }

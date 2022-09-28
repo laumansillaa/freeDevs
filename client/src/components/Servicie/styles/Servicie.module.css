@@ -16,6 +16,8 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: space-around;
+  align-items: center;
+  justify-items: center;
   width: 55%;
   height: 85vh;
  
@@ -96,11 +98,11 @@
   justify-content: center;
   color: #fff;
   -webkit-border-top-right-radius: 89px;
--webkit-border-bottom-left-radius: 89px;
--moz-border-radius-topright: 89px;
--moz-border-radius-bottomleft: 89px;
-border-top-right-radius: 89px;
-border-bottom-left-radius: 89px;
+  -webkit-border-bottom-left-radius: 89px;
+  -moz-border-radius-topright: 89px;
+  -moz-border-radius-bottomleft: 89px;
+  border-top-right-radius: 89px;
+  border-bottom-left-radius: 89px;
 }
 .titleParrafo{
   font-size: 2rem;
