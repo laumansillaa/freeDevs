@@ -70,7 +70,7 @@
 }
 .parrafo{
   text-align: start;
-  font-size: .7rem;
+  font-size: .8rem;
   font-family: 'Poppins';
   color: #000;
 }
@@ -83,6 +83,15 @@
     height: auto;
    
   }
+
+  .title{
+    font-size: 1.7rem;
+  }
+
+  .parrafo{
+    font-size: 1rem;
+  }
+
   .contentParrafo{
     width: 80%;
     margin: auto;

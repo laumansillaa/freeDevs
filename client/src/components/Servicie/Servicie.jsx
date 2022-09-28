@@ -32,7 +32,7 @@ const Servicie = () => {
     </Box>
     <Box className={style.contentServiWork}>
         <Box className={style.contentTitleWorkSpan}>
-          <h1>Nuestra gestion para llevar acabo un gran proyecto</h1>
+          <h1 >Nuestra gestion para llevar acabo un gran proyecto</h1>
         </Box>
         <Box className={style.contentPImg}>
         <Box className={style.contentParrafoWork}>

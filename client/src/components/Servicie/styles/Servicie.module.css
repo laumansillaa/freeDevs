@@ -105,10 +105,13 @@ border-bottom-left-radius: 89px;
 .titleParrafo{
   font-size: 2rem;
   font-family:'Bebas Neue';
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .parrafoWork{
   font-size: 1rem;
-  padding: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: 'Poppins';
 }
 .imgWork{
@@ -135,8 +138,9 @@ border-bottom-left-radius: 89px;
   .cards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
-    width: 60%;
+    width: 80%;
     height: auto;
     /* margin: 20px; */
   }
@@ -152,14 +156,31 @@ border-bottom-left-radius: 89px;
     width: 100%;
     
   }
+
   .contentTitle{
     font-size: 1.3rem;
+    padding: 0 0 0 1rem;
   }
+
+  .contentParrafo{
+    padding: 0 1rem 0 1rem;
+  }
+
+  /* .contentTitleWorkSpan h1{
+    font-family:'Bebas Neue';
+    font-size: 2rem;
+  } */
 
   .contentTitleWorkSpan{
     width: 90%;
     height: auto;
+    padding: .7rem;
   }
+
+  .contentTitleWorkSpan h1{
+    font-family: 'Bebas Neue';
+  }
+
   .contentPImg{
    flex-direction:column-reverse;
     margin-top: 60px;
@@ -173,12 +194,13 @@ border-bottom-left-radius: 89px;
     width: 90%;
   }
   .titleParrafo{
+    font-family: 'Bebas Neue';
     font-size: 2.2rem;
-    padding: 10px;
+    padding: 1rem 1rem 0 1rem;
   }
   .parrafoWork{
     font-size: 1.2rem;
-    padding: 5px;
+    padding: 0 1rem 0 1rem;
   }
   .contentCarousel{
     margin-bottom: 80px;

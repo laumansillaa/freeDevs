@@ -2,23 +2,18 @@
   position: fixed;
   display: flex;
   width: 100%;
-  background: #333;
-  opacity: 97%;
+  background: black;
+  /* opacity: 97%; */
   /* padding: 1rem; */
   padding-bottom: .5rem;
   z-index: 1;
-
-
 }
 .navContainer{
-  /* background: #333; */
   width: 100%;
-  z-index: 1;
   padding: 1rem;
 }
 
 .contImgNav{
-  z-index: 1;
   padding-left: 1rem;
   width: 25%;
 }
@@ -31,7 +26,6 @@
 }
 
 .lampara{
-
   height: 2rem;
 }
 
@@ -49,17 +43,19 @@
 }
 
 .contItemsNav{
-  width: 60%;
+  width: 40%;
   display: grid;
   grid-auto-flow: column;
   gap: 3em;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .navItem{
+  z-index: 1;
+  width: 80%;
   text-decoration: none;
   font-family: 'Poppins';
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #fff;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
@@ -68,21 +64,21 @@
 .navItem::after{
   content: "";
   display: block;
-  background: #333;
-  width: 100%;
+  background: #fff;
   margin-top: 3px;
   height: 3px;
   clip-path: var(--clippy);
-  transition: clip-path .3s;
-
+  transition: clip-path .5s;
 }
 
 .navItem:hover{
+  color: #fff;
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   cursor: pointer;
 }
 
 @media (max-width: 730px){
+
   .navContainer{
       padding-right: 1rem;
       width: 100%;
@@ -93,24 +89,19 @@
       cursor: pointer;
   }
 
-  .contLampara{
-      display: none;
-  }
-
   .navItem{
     color: #fff;
+    font-size: 1.3rem;
   }
 
   .contItemsNav{
       position: absolute;
+      z-index: 1;
       top: 71px;
       bottom: 0;
-      /* background: #1565c0; */
-      background: #333;
-      z-index: 1;
+      background: black;
       width: 100%;
-      /* overflow-y: hidden; */
-      /* height: 50%; */
+      height: 60%;
       left: 0;
       display: flex;
       justify-content: space-evenly;
