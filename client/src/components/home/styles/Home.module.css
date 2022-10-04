@@ -4,6 +4,7 @@
     width: 100%;
 }
 .spn{
+    font-size: 8vh;
     color: var(--color-quinto);
 }
 .containerMotivation{

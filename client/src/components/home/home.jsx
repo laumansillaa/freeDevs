@@ -19,17 +19,17 @@ const Home = () => {
                                 <Typography 
                                     sx={{
                                         fontFamily: 'Bebas Neue',
-                                        fontSize: '2.8rem',
+                                        fontSize: '2.4rem',
                                         color: '#000'
                                     }}
-                                > <span className={style.spn}>Codeamos</span> soluciones para una vida mejor
+                                > <span className={style.spn}>Codeamos</span> soluciones, potenciamos tu proyecto
                                 </Typography>
                             </Box>
                             <Box className={style.contHomeTxtTwo}>
                                 <Typography 
                                     sx={{
                                         fontFamily: 'Bebas Neue',
-                                        fontSize: '2.5rem',
+                                        fontSize: '2.4rem',
                                         color: '#000',
                                     }}
                                 >
