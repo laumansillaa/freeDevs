@@ -117,3 +117,15 @@
         width: 100%;
     }
 }
+
+@media (max-width: 360px){
+
+    .aboutImg{
+        height: 6rem;
+    }
+
+    .contItem{
+        width: auto;
+        padding: 0 0 0 .3rem;
+    }
+}

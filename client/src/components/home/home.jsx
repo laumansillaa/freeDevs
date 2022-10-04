@@ -1,6 +1,6 @@
 import { Box, Typography, Button } from '@mui/material';
 import frase from '../../assets/svg/frase.svg'
-import BackgroundParticles from '../particles';
+import frase1 from '../../assets/svg/frase1.svg'
 import style from './styles/Home.module.css'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Efc from './Efc';
@@ -42,7 +42,7 @@ const Home = () => {
                         </Box>
                         <Box className={style.containerMotivation}>
                              <Box className={style.contentImg}>
-                                 <img src={frase} alt='motivation-svg' className={style.motivation}/>
+                                 <img src={frase1} alt='motivation-svg' className={style.motivation}/>
                              </Box>
                             <Box className={style.contIcons} >
                                 {/* <TypeWriterEffect
