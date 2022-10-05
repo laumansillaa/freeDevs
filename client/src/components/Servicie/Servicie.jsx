@@ -10,8 +10,8 @@ const Servicie = () => {
     <>
     <Box className={style.contentAbout} id='servicio'>
       <Box className={style.cards}>
-       <Card  title="Desarrollo web" info="desarrollamos soluciones a medida, utilizando las ultimas tecnologias de alto rendimiento y escabilidad, trabajamos persiguiendo tus objetivos"/>
-       <CardSec title="Disenio ux/ui" info="Buscamos la mejor experiencia para tus usuarios. Nos enfocamos en que los clientes se lleven experiencias placenteras y asi potncias realaciones, lo que lleva obtener un mejor impacto"/>
+       <Card  title="Desarrollo web" info="Trabajamos en brindar soluciones a medida. Desarrollamos en los último en     tecnología para llevar a cabo un rendimiento más óptimo en nuestras apps buscando estabilidad a largo plazo, persiguiendo tus objetivos"/>
+       <CardSec title="Disenio ux/ui" info="El objetivo es buscar la mejor performance para tus usuarios, indicando que los clientes se    lleven experiencias placenteras, y un diseño óptimo para el proyecto"/>
        <CardSec title="Web Analytics" info="Creamos un análisis bien hecho para comprender el comportamiento de tu audiencia y tomar acciones más concretas y certeras"/>
        <Card title="SEO" info="Search Engine Optimization. Realizamos en un conjunto de técnicas y estrategias centradas en optimizar el posicionamiento orgánico en buscadores de internet"/>
       
@@ -24,7 +24,9 @@ const Servicie = () => {
               <h1 className={style.titleDigital}>Digital</h1>
             </Box>
             <Box className={style.contentParrafo}>
-              <p>Nuestro equipo interdiciplinado esta listo para construir su producto, desde una web site, hasta una aplicacion web y e-commerce. Ofrecemos modelos estrategicos, consultorio para la realizacion de App para generar un gran impacto y brindarle soluciones cros/stack digital.</p>
+              <p>Nuestro equipo interdisciplinario, está preparado para construir su producto, desde una website, hasta una App. Trabajamos seriamente no solo en la lógica del trabajo, sino en el diseño que se adecue a tus visitantes. Ofrecemos modelos estratégicos, para guiarte desde el comienzo.<br/> 
+                  <br/>Si cuentas con una ONG no dudes en contactarnos, en nuestra comunidad nos gusta escuchar acerca de grandes ideas que puedan generar un gran impacto en la sociedad y nuestro planeta, y nos gustaría ser parte de ello sin ánimos de lucro.
+              </p>
               </Box>
         </Box>
       </Box>
@@ -37,8 +39,7 @@ const Servicie = () => {
         <Box className={style.contentPImg}>
         <Box className={style.contentParrafoWork}>
           <h1 className={style.titleParrafo}>Te contamos nuestra modalidad de trabajo</h1>
-          <p className={style.parrafoWork}>Utilizando metodologias agiles, planificamos y gestionamos todos nuestrosproyectos, para obtener mejores resultados dia a dia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia ducimus eaque, voluptas nemo tempore explicabo reprehenderit, magnam doloremque veritatis consequatur maxime? Dolor optio culpa quisquam ipsum numquam eius. Ab!
-          Amet cupiditapti totam perspiciatis assumenda, hic molestiae repellat laboriosam recusandae voluptate quidem voluptatum pariatur doloribus quisquam ratione dolorum? Labore, neque.</p>
+          <p className={style.parrafoWork}> Utilizando metodologías ágiles, planificamos y gestionamos todos nuestros proyectos para obtener mejores resultados día a día. Primeramente nos centramos en definir el diseño que aplicaremos al proyecto, buscando un aspecto moderno y agradable, que genere satisfacción en los usuarios. Una vez definido, es la hora de hacerlo realidad. Cumplido el plazo estimado, podrás ver esa idea que tanto pensaste, hecha realidad.</p>
           {/* <Button
               variant='contained'
                  sx={{

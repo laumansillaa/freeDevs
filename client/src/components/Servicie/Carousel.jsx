@@ -23,10 +23,19 @@ function DarkVariantExample() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5>SCRUM</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus 
-            necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto 
-            perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
+          <h5>Que nos diferencia?</h5>
+          
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className={style.img}
+          src="https://i.pinimg.com/564x/35/65/b6/3565b6cf67433af6387fb04e1899ec3d.jpg"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          
+          <p> Somos FreeDevs, un equipo apasionado por la tecnologia e invación
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -37,25 +46,7 @@ function DarkVariantExample() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5>Realizamos encuestas</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus
-             necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto
-              perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className={style.img}
-          src="https://i.pinimg.com/564x/35/65/b6/3565b6cf67433af6387fb04e1899ec3d.jpg"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Comunicacion</h5>
-          <p>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum accusamus 
-            necessitatibus fugiat eveniet quis nostrum quaerat ea perspiciatis reprehenderit architecto 
-            perferendis, at voluptas corrupti pariatur, veniam esse! In, itaque?
-          </p>
+          <p>Nuestro Rol es tomar cada idea optimizarla y exponenciarla al maximo</p>
         </Carousel.Caption>
       </Carousel.Item>
       

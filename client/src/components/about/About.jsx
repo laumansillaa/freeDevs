@@ -30,7 +30,7 @@ const About = () => {
                             <Typography sx={{
                             fontFamily: 'Poppins',
                             fontSize: '1rem',
-                        }}>Nuestro desafio es ofrecerte las mejores soluciones</Typography>
+                        }}>Trabajamos en darte la mejor experiencia, y los mejores resultados</Typography>
                         </Box>
                     </Box>
                     <Box className={style.contItem}>
@@ -60,7 +60,7 @@ const About = () => {
                             <Typography sx={{
                             fontFamily: 'Poppins',
                             fontSize: '1rem',
-                        }}>Nuestro equipo también es nuestra familia y junto con nuestros socios, somos una comunidad seguda</Typography>
+                        }}>La diversidad también nos representa y somos una comunidad con mucha cultura</Typography>
                         </Box>
                     </Box>
                     <Box className={style.contItem}>
@@ -74,7 +74,7 @@ const About = () => {
                             <Typography sx={{
                             fontFamily: 'Poppins',
                             fontSize: '1rem',
-                        }}>Adoptamos un enfoque único que combina las próximas tecnologias y scrum</Typography>
+                        }}>Nos mantenemos estables y también trabajando en nuevas tecnologías</Typography>
                         </Box>
                     </Box>
                 </Box>

@@ -61,7 +61,7 @@
   text-align: left;
   width: 100%;
   height: auto;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: 'Poppins';
 }
 .contentTitleWorkSpan{
@@ -85,14 +85,14 @@
   height: auto;
   justify-content: space-around;
   flex-direction: row;
-  margin-top: 160px;
+  margin-top: 140px;
 }
 .contentParrafoWork{
   display: flex;
   flex-direction:column;
   margin-left: 1rem;
   width: 60%;
-  height: auto;
+  height: 40vh !important;
   background-color: var(--color-quinto);
   height: auto;
   justify-content: center;
