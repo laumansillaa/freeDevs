@@ -10,21 +10,21 @@ const Contact = () => {
 
       <Box className={style.contact} id='contact'>
        <Box className={style.contentCards}> 
-        <Box className={style.card}>
-          <span className={style.titleCard}>¿Tenes un proyecto panificado y necesitas desarrollarlo?</span>
-        </Box>
-        <Box className={style.card}>
-        <span className={style.titleCard}>¿Queres que tu negocio empiece a crecer?</span>
-        </Box>
-        <Box className={style.card}>
-        <span className={style.titleCard}>¿Tenes una idea pero no sabes por donde empezar?</span>
-        </Box>
-        <Box className={style.span}>
-        <Typography sx={{
-          fontFamily: 'Bebas Neue',
-          fontSize: '1.8rem'
-        }} >No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</Typography>
-        </Box>
+          <Box className={style.card}>
+            <span className={style.titleCard}>¿Tenes un proyecto panificado y necesitas desarrollarlo?</span>
+          </Box>
+          <Box className={style.card}>
+            <span className={style.titleCard}>¿Queres que tu negocio empiece a crecer?</span>
+          </Box>
+          <Box className={style.card}>
+            <span className={style.titleCard}>¿Tenes una idea pero no sabes por donde empezar?</span>
+          </Box>
+          <Box className={style.span}>
+            <Typography sx={{
+              fontFamily: 'Bebas Neue',
+              fontSize: '1.8rem'
+            }} >No dudes en contactarnos y nuestro equipo se pondra en contacto con vos</Typography>
+          </Box>
        </Box>
        <Box  className={style.contentForm}>
         <Form />
