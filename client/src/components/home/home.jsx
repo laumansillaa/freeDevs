@@ -3,6 +3,7 @@ import frase from '../../assets/svg/frase.svg'
 import frase1 from '../../assets/svg/frase1.svg'
 import style from './styles/Home.module.css'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import giftLogo from "../../assets/png/gifLogo3.gif"
 import Efc from './Efc';
 // import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
@@ -41,8 +42,12 @@ const Home = () => {
                           
                         </Box>
                         <Box className={style.containerMotivation}>
-                             <Box className={style.contentImg}>
+
+                             {/* <Box className={style.contentImg}>
                                  <img src={frase1} alt='motivation-svg' className={style.motivation}/>
+                             </Box> */}
+                             <Box className={style.containerGif}>
+                                <img width="400" src={giftLogo} alt="video-not-found"></img>
                              </Box>
                             <Box className={style.contIcons} >
                                 {/* <TypeWriterEffect

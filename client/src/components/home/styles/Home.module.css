@@ -9,13 +9,18 @@
 }
 .containerMotivation{
     padding-top: 3rem;
-    height: auto;
+    height: 95vh;
     width: 50%;
     /* margin-top: 4rem; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerGif{
+    display: flex;
+  margin-top: 50px;
 }
 .contentImg{
     display: flex;

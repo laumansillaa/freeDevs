@@ -1,6 +1,6 @@
 import {Box, Typography} from '@mui/material'
 import { Link, animateScroll as scroll } from "react-scroll";
-import freeDev from '../../assets/svg/freeDevs.svg'
+import Logo from "../../assets/png/LogoPrin.png"
 import style from './styles/index.module.css'
 import menu from '../../assets/svg/menu.svg'
 import lampara from '../../assets/lampara.png'
@@ -18,7 +18,7 @@ const Nav = () => {
         <Box className={style.contNav} >
             <Box className={style.navContainer}>
                 <Box className={style.contImgNav}>
-                    <Link to="home" spy={true} smooth={true} offset={-100} duration={200}><img src={freeDev} alt='freeDev-svg' className={style.logo}/></Link>
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={200}><img src={Logo} alt='logo not found' className={style.logo}/></Link>
                 </Box>
                 <label for= 'menu' className={style.navLabel}>
                     <img src={menu} alt='menu-svg' className={style.navSvg} />
