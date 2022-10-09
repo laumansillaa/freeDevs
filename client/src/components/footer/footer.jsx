@@ -2,12 +2,14 @@ import {Box, Typography} from '@mui/material'
 import style from "./styles/Footer.module.css"
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
+import freeDevs from '../../assets/svg/freeDevs.svg'
+
 const Footer = () => {
 
     return (
         <Box className={style.contentFooter} id='footer'>
            <div className={style.contentLogo}>
-            <h1>Logo</h1>
+            <img src={freeDevs} alt='freeDevs-svg' className={style.logo}/>
            </div>
        
             

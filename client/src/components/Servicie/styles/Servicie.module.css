@@ -71,13 +71,15 @@
   border-radius: 50px;
   align-items: center;
   width: 60%;
-  background-color: var(--color-secundario);
+  background-color: black;
+  color: #fafafa;
   height: 15vh;
   margin-top: -60px;
 }
 .contentTitleWorkSpan h1{
   font-family:'Bebas Neue';
   font-size: 2rem;
+  letter-spacing: 1px;
 }
 .contentPImg{
   display: flex;
@@ -92,11 +94,13 @@
   flex-direction:column;
   margin-left: 1rem;
   width: 60%;
-  height: 40vh !important;
+  /* height: 40vh !important; */
+  height: 100%;
   background-color: var(--color-quinto);
   height: auto;
   justify-content: center;
   color: #fff;
+  padding: 1rem .5rem 1rem .5rem;
   -webkit-border-top-right-radius: 89px;
   -webkit-border-bottom-left-radius: 89px;
   -moz-border-radius-topright: 89px;
@@ -194,6 +198,7 @@
   .contentParrafoWork{
     margin: auto;
     width: 90%;
+    padding: .5rem;
   }
   .titleParrafo{
     font-family: 'Bebas Neue';

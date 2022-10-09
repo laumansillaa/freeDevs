@@ -5,12 +5,12 @@
 
 }
 .spn{
-    font-size: 8vh;
+    font-size: 3rem;
     color: var(--color-quinto);
 }
 .containerMotivation{
     padding-top: 3rem;
-    height: auto;
+    /* height: auto; */
     width: 50%;
     /* margin-top: 4rem; */
     display: flex;
@@ -20,22 +20,39 @@
 }
 .contentImg{
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
      width: 70vh;
      height: 50%; 
      margin-left: 3rem;
+
 }
 .motivation{
-    width: 100%;
+    width: 80%;
 }
+
+.contGif{
+    /* width: 70vh; */
+    height: 80%;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    align-items: center;
+}
+
+.gif{
+    height: 22rem;
+}
+
 
 .contIcons{
     display: flex;
-    height: 40%;
+    /* height: 40%; */
     width: 85%;
     justify-content: end;
     align-items: flex-end;
     align-content: flex-end;
+
 }
 .icon{
     font-size: 2rem;
@@ -226,6 +243,10 @@
     .icon{
         font-size: 2rem;
         margin-left: 20px;
+    }
+
+    .spn{
+        font-size: 2.4rem;
     }
 }
 
