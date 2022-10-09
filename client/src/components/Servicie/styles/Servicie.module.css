@@ -170,6 +170,7 @@
 
   .contentParrafo{
     padding: 0 1rem 0 1rem;
+    font-size: 1.1rem;
   }
 
   /* .contentTitleWorkSpan h1{
@@ -180,7 +181,7 @@
   .contentTitleWorkSpan{
     width: 90%;
     height: auto;
-    padding: .7rem;
+    padding: 1.2rem;
   }
 
   .contentTitleWorkSpan h1{
