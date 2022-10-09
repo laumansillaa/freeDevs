@@ -3,6 +3,7 @@ import frase1 from '../../assets/svg/frase1.svg'
 import gif from '../../assets/gif/GIF-LOGO.gif'
 import style from './styles/Home.module.css'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import giftLogo from "../../assets/png/gifLogo3.gif"
 import Efc from './Efc';
 
 
