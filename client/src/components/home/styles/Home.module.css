@@ -38,6 +38,7 @@
 
 .contGif{
     /* width: 70vh; */
+    width: auto;
     height: 80%;
     display: flex;
     /* align-items: flex-end; */
@@ -46,7 +47,7 @@
 }
 
 .gif{
-    height: 22rem;
+    height: 25rem;
 }
 
 
@@ -248,6 +249,10 @@
     .icon{
         font-size: 2rem;
         margin-left: 20px;
+    }
+
+    .gif{
+        height: 22rem;
     }
 
     .spn{
