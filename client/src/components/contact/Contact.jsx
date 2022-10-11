@@ -7,7 +7,6 @@ const Contact = () => {
 
   return(
     <>
-
       <Box className={style.contact} id='contact'>
        <Box className={style.contentCards}> 
           <Box className={style.card}>

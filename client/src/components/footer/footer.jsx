@@ -11,8 +11,6 @@ const Footer = () => {
            <div className={style.contentLogo}>
             <img src={freeDevs} alt='freeDevs-svg' className={style.logo}/>
            </div>
-       
-            
            <div className={style.contentIConsEmail}>
               <div className={style.contentICons}>
                 <FaInstagram className={style.icon}/>
@@ -20,12 +18,10 @@ const Footer = () => {
                 <FaEnvelope className={style.icon}/>
                 <FaWhatsapp className={style.icon}/>
               </div>
-           <div>
-             <h4 className={style.title}>Suport FreeDevs@gmail.com</h4>
+              <div>
+                <h4 className={style.title}>Suport FreeDevs@gmail.com</h4>
+              </div>
            </div>
-           
-           </div>
-
            <div>
             <h4 className={style.title}> 2022 © Todos los derechos reservados a FreeDevs</h4>
           </div>

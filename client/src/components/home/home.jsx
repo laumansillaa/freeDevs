@@ -12,9 +12,6 @@ const Home = () => {
 
     return (
             <Box id="home">
-                {/* <Box>
-                    <BackgroundParticles/>
-                </Box> */}
                 <Box>
                     <Box className={style.containerHome}>
                         <Box className={style.containerTxtHome}>
