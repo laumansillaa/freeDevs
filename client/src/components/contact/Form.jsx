@@ -5,7 +5,8 @@ import {Box, Button, Alert, Typography} from '@mui/material'
 import TextField from '@mui/material/TextField';
 import validateEmail from '../utils/utils.js'
 import { FaTelegramPlane } from "react-icons/fa";
-
+// const {SERVICE_ID, TEMPLATE_ID, GOOGLE_KEY} = import.meta.env;
+// console.log('DotENV', SERVICE_ID, TEMPLATE_ID, GOOGLE_KEY )
 
 export default function BasicTextFields() {
 
@@ -39,7 +40,7 @@ export default function BasicTextFields() {
   const sendEmail = (e) => {
     e.preventDefault()
     if (form.name && form.phone && form.email && form.asunto && form.text){
-      emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
+      emailjs.send('service_t6x9609', 'template_t429acf', form, '9xS4fuSET0CG1EMpx')
       .then(function(response) {
           setOpen(true)
           setReset(true)

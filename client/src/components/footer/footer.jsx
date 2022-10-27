@@ -13,10 +13,18 @@ const Footer = () => {
            </div>
            <div className={style.contentIConsEmail}>
               <div className={style.contentICons}>
-                <FaInstagram className={style.icon}/>
-                <FaLinkedin className={style.icon}/>
-                <FaEnvelope className={style.icon}/>
-                <FaWhatsapp className={style.icon}/>
+                <a href='https://www.instagram.com/free_devs/' target='_blank'>
+                  <FaInstagram className={style.icon}/>
+                </a>
+                <a href='https://www.instagram.com/free_devs/' target='_blank'>
+                  <FaLinkedin className={style.icon}/>
+                </a>
+                <a href='mailto:freedevs.tech@gmail.com' target='_blank'>
+                  <FaEnvelope className={style.icon}/>
+                </a>
+                <a href='https://wa.me/5491141668947' target='_blank'>
+                  <FaWhatsapp className={style.icon}/>
+                </a>
               </div>
               <div>
                 <h4 className={style.title}>Suport FreeDevs@gmail.com</h4>

@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .contTitleAbout{
@@ -99,6 +100,9 @@
 }
 
 @media (max-width: 430px){
+    .contAbout{
+        padding-top: 0;
+    }
     .contAux{
         display: flex;
         justify-content: center;
