@@ -11,7 +11,7 @@ const Servicie = () => {
     <Box className={style.contentAbout} id='servicio'>
       <Box className={style.cards}>
        <Card  title="Desarrollo web" info="Trabajamos en brindar soluciones a medida. Desarrollamos en los último en     tecnología para llevar a cabo un rendimiento más óptimo en nuestras apps buscando estabilidad a largo plazo, persiguiendo tus objetivos"/>
-       <CardSec title="Disenio ux/ui" info="Queremos que los usuarios tengan la mejor experiencia en tu sitio. Por eso diseñamos interfaces optimas y placenteras, para lograr un mejor impacto"/>
+       <CardSec title="Diseño ux/ui" info="Queremos que los usuarios tengan la mejor experiencia en tu sitio. Por eso diseñamos interfaces optimas y placenteras, para lograr un mejor impacto"/>
        {/* <CardSec title="Disenio ux/ui" info="El objetivo es buscar la mejor performance para tus usuarios, indicando que los clientes se    lleven experiencias placenteras, y un diseño óptimo para el proyecto"/> */}
        <CardSec title="Web Analytics" info="Creamos un análisis bien hecho para comprender el comportamiento de tu audiencia y tomar acciones más concretas y certeras"/>
        <Card title="SEO" info="Search Engine Optimization. Realizamos en un conjunto de técnicas y estrategias centradas en optimizar el posicionamiento orgánico en buscadores de internet"/>

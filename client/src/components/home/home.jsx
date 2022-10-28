@@ -63,7 +63,7 @@ const Home = () => {
                                     <a href='https://www.instagram.com/free_devs/' target='_blank' className={style.homeLink}>
                                         <FaInstagram className={style.icon}/>
                                     </a>
-                                    <a href='https://www.instagram.com/free_devs/' target='_blank' className={style.homeLink}>
+                                    <a href='https://www.linkedin.com/in/freedevs/' target='_blank' className={style.homeLink}>
                                         <FaLinkedin className={style.icon}/>
                                     </a>
 

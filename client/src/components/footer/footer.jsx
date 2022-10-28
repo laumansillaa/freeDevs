@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href='https://www.instagram.com/free_devs/' target='_blank'>
                   <FaInstagram className={style.icon}/>
                 </a>
-                <a href='https://www.instagram.com/free_devs/' target='_blank'>
+                <a href='https://www.linkedin.com/in/freedevs/' target='_blank'>
                   <FaLinkedin className={style.icon}/>
                 </a>
                 <a href='mailto:freedevs.tech@gmail.com' target='_blank'>
