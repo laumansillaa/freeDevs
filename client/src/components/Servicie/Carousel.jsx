@@ -13,7 +13,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
           <h5 >¿Como son los procesos?</h5>
         </Carousel.Caption>
       </Carousel.Item>
@@ -23,7 +23,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
         <h5>1 - Briefing</h5>
           <p>Nos reunimos con el cliente para saber que espera de la web y entender el modelo de negocio.
           </p>
@@ -35,7 +35,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
         <h5>2 - Planning</h5>
           <p>Planifamos con el equipo, y asentamos las bases sobre las que se trabajaran. Se aportan soluciones para la consecución del objetivo.
           </p>
@@ -47,7 +47,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
         <h5>3 - Diseño</h5>
           <p>Llevamos acabo un diseño agradable para el usuario final, trabajando con prototipos de baja y alta densidad para luego realizar test de usabilidad.
           </p>
@@ -59,7 +59,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
         <h5>4 - Desarrollo</h5>
           <p>En esta fase se implementan todas las funcionalidades que harán que el proyecto funcione. Desarrollamos el front end y el backend, poner a punto las bases de datos y también la optimización del rendimiento de la página.
           </p>
@@ -83,7 +83,7 @@ function DarkVariantExample() {
           src={imgCarrousel}
           alt="Second slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={style.caption}>
         <h5>6 - Mantenimiento</h5>
           <p>Una vez lanzada la web, se realizara el mantenimiento, desde actualizaciones y mejoras continuas de lo existente hasta el desarrollo de nuevas funcionalidades a medida que el negocio vaya creciendo.
           </p>
