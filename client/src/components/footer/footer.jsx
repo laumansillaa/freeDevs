@@ -27,7 +27,7 @@ const Footer = () => {
                 </a>
               </div>
               <div>
-                <h4 className={style.title}>Suport FreeDevs@gmail.com</h4>
+                <h4 className={style.title}>FreeDevs.tech@gmail.com</h4>
               </div>
            </div>
            <div>

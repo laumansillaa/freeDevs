@@ -46,6 +46,14 @@
     margin-bottom: 5rem;
     
 }
+.contButtonAbout a{
+   
+    text-decoration: none;
+}
+.icon{
+    font-size: 2rem;    
+    margin-right: 2px;
+}
 
 @media (max-width: 1110px){
     .contTitleAbout{
