@@ -78,7 +78,7 @@ export default function BasicTextFields() {
   const closeError = () => {
     if (open) {
       setTimeout(setOpen, 4000, null)
-      // const reload = window.location.reload()
+      const reload = window.location.reload()
     } 
   }
 
