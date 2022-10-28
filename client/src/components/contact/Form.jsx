@@ -7,7 +7,7 @@ import validateEmail from '../utils/utils.js'
 import { FaTelegramPlane } from "react-icons/fa";
 const {VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY} = import.meta.env;
 // console.log('ProcessEnv', import.meta.env.VITE_SERVICE_ID)
-// console.log('DotENV', VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY )
+console.log('DotENV', VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY )
 
 export default function BasicTextFields() {
 
@@ -41,7 +41,7 @@ export default function BasicTextFields() {
   const sendEmail = (e) => {
     e.preventDefault()
     if (form.name && form.phone && form.email && form.asunto && form.text){
-      emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form, VITE_PUBLIC_KEY)
+      emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY, form)
       .then(function(response) {
           setOpen(true)
           // setReset(true)
