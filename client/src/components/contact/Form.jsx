@@ -41,7 +41,7 @@ export default function BasicTextFields() {
   const sendEmail = (e) => {
     e.preventDefault()
     if (form.name && form.phone && form.email && form.asunto && form.text){
-      emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form, '9xS4fuSET0CG1EMpx')
+      emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form, VITE_PUBLIC_KEY)
       .then(function(response) {
           setOpen(true)
           // setReset(true)
