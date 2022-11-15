@@ -14,7 +14,13 @@ h5{
   font-size: 1.3rem;
   color: #0b4783;
 }
-
+.caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 11.5rem;
+  
+}
 @media (max-width: 430px) {
   .carousel{
     width: 400px;

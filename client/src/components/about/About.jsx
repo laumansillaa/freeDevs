@@ -4,6 +4,7 @@ import teamWork from '../../assets/svg/teamWork.svg';
 import Handshake from '../../assets/svg/Handshake.svg';
 import team from '../../assets/svg/team.svg'
 import Innovation from '../../assets/svg/Innovation.svg'
+import { FaWhatsapp} from 'react-icons/fa';
 
 const About = () => {
 
@@ -80,14 +81,19 @@ const About = () => {
                 </Box>
             </Box>
             <Box className={style.contButtonAbout}>
+            <a href='https://wa.me/5491141668947' target='_blank'>
+                 
                 <Button variant='contained' sx={{
                     fontFamily: 'Bebas Neue',
                     fontSize: '1.3rem',
-                    letterSpacing: '.1rem',
-                    background: '#0066CC'
+                    letterSpacing: '.2rem',
+                    background: '#25D366'
                 }}>
-                    Solicitar cotizacion
+                    <FaWhatsapp className={style.icon}/> <hr />
+                     Quiero info a traves de WhatsApp
                 </Button>
+                </a>
+
             </Box>
         </Box>
     )
