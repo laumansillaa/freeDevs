@@ -22,12 +22,15 @@ export default function BasicTextFields() {
     text: '' 
   })
 
-  useEffect(() => {
-    validateEmail(form.email)? setEmailError(false) : setEmailError(true)
-  }, [form.email])
+  // useEffect(() => {
+  //   validateEmail(form.email)? setEmailError(false) : setEmailError(true)
+  //   console.log('Me renderice')
+  // }, [form.email])
 
   useEffect(() => {
     closeError()
+    console.log('Segundo useEffect, CLOSEERROR')
+
   }, [open])
 
 
@@ -36,6 +39,9 @@ export default function BasicTextFields() {
       ...form,
       [e.target.name] : e.target.value
     })
+
+    validateEmail(form.email)? setEmailError(false) : setEmailError(true)
+
   }
 
   const sendEmail = (e) => {
